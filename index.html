@@ -886,6 +886,11 @@
             gap: 10px;
         }
         .form-success.show { display: flex; animation: fadeIn .35s var(--ease); }
+        .form-success.is-error {
+            color: #991b1b;
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
         [data-theme="dark"] .form-success {
             background: rgba(34, 197, 94, .18);
             border-color: rgba(34, 197, 94, .4);
@@ -2490,7 +2495,7 @@
                         <div class="form-card">
                             <h3>Ministry Interest Form</h3>
                             <p>Tell us which ministry you'd like to join, and a youth leader will reach out through our WhatsApp group.</p>
-                            <form class="js-demo-form" novalidate>
+                            <form class="js-demo-form" data-form-type="ministry" novalidate>
                                 <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! A youth leader will follow up with you on WhatsApp.</div>
                                 <div class="form-grid">
                                     <div class="form-group">
@@ -2586,7 +2591,7 @@
                         <div class="form-card">
                             <h3>Become a Volunteer</h3>
                             <p>Fill in your details below and select the areas you'd like to help with. A youth leader will contact you on WhatsApp.</p>
-                            <form class="js-demo-form" novalidate>
+                            <form class="js-demo-form" data-form-type="volunteer" novalidate>
                                 <div class="form-success"><i class="fas fa-check-circle"></i> Thank you for volunteering! We'll be in touch shortly.</div>
                                 <div class="form-grid">
                                     <div class="form-group">
@@ -2956,7 +2961,7 @@
                         <div class="form-card">
                             <h3>Let Us Know You're Coming</h3>
                             <p>Fill this out before your first visit so we can welcome you personally and connect you with the right group.</p>
-                            <form class="js-demo-form" novalidate>
+                            <form class="js-demo-form" data-form-type="visitor" novalidate>
                                 <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! We can't wait to meet you.</div>
                                 <div class="form-grid">
                                     <div class="form-group">
@@ -3215,7 +3220,7 @@
                 <button class="modal-close" id="eventModalClose" aria-label="Close dialog"><i class="fas fa-times"></i></button>
             </div>
             <div class="modal-body">
-                <form class="js-demo-form" id="eventForm" novalidate>
+                <form class="js-demo-form" id="eventForm" data-form-type="event" novalidate>
                     <div class="form-success"><i class="fas fa-check-circle"></i> You're registered! A leader will confirm with you on WhatsApp.</div>
                     <input type="hidden" id="event-name" name="event-name">
                     <div class="form-grid">
@@ -3370,28 +3375,54 @@
         }
 
         /* =========================================================
-           6. DEMO FORM HANDLING — show success message, reset fields
+           6. FORM HANDLING — securely save submissions to Netlify Database
            ========================================================= */
+        function formPayload(form) {
+            const type = form.dataset.formType;
+            const value = id => (document.getElementById(id)?.value || '').trim();
+            const payloads = {
+                ministry: { type, name: value('mi-name'), phone: value('mi-phone'), ministry: value('mi-ministry'), grade: value('mi-grade'), message: value('mi-message') },
+                volunteer: { type, name: value('vo-name'), phone: value('vo-phone'), availability: value('vo-availability'), area: value('vo-area'), message: value('vo-message') },
+                visitor: { type, name: value('nh-name'), age: value('nh-age'), phone: value('nh-phone'), heardFrom: value('nh-hear'), notes: value('nh-notes') },
+                event: { type, eventName: value('event-name'), name: value('reg-name'), phone: value('reg-phone'), attendees: value('reg-attendees'), grade: value('reg-grade'), notes: value('reg-notes') }
+            };
+            return payloads[type];
+        }
+
         document.querySelectorAll('form.js-demo-form').forEach(form => {
-            form.addEventListener('submit', function (e) {
+            form.addEventListener('submit', async function (e) {
                 e.preventDefault();
-                // Basic HTML5 validation
                 if (!form.checkValidity()) {
                     form.reportValidity();
                     return;
                 }
                 const success = form.querySelector('.form-success');
-                if (success) {
-                    success.classList.add('show');
-                    setTimeout(() => success.classList.remove('show'), 5000);
+                const button = form.querySelector('button[type="submit"]');
+                const originalMessage = success?.innerHTML;
+                if (success) success.classList.remove('show', 'is-error');
+                if (button) button.disabled = true;
+                try {
+                    const response = await fetch('/api/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formPayload(form))
+                    });
+                    if (!response.ok) throw new Error('Submission failed');
+                    if (success) {
+                        success.innerHTML = originalMessage;
+                        success.classList.add('show');
+                        setTimeout(() => success.classList.remove('show'), 5000);
+                    }
+                    if (form.id === 'eventForm') setTimeout(() => closeEventModal(), 1600);
+                    form.reset();
+                } catch (error) {
+                    if (success) {
+                        success.textContent = 'We could not save your details. Please check your connection and try again.';
+                        success.classList.add('show', 'is-error');
+                    }
+                } finally {
+                    if (button) button.disabled = false;
                 }
-                // If it's the modal form, close modal after short delay
-                if (form.id === 'eventForm') {
-                    setTimeout(() => closeEventModal(), 1600);
-                }
-                form.reset();
-                const other = document.getElementById('other-amount');
-                if (other) other.style.display = 'none';
             });
         });
 
@@ -3399,7 +3430,7 @@
            7. NEWSLETTER FORM (footer)
            ========================================================= */
         document.querySelectorAll('form.js-newsletter-form').forEach(form => {
-            form.addEventListener('submit', function (e) {
+            form.addEventListener('submit', async function (e) {
                 e.preventDefault();
                 const input = form.querySelector('input[type="email"]');
                 if (!input || !input.checkValidity()) {
@@ -3407,11 +3438,29 @@
                     return;
                 }
                 const msg = form.parentElement.querySelector('.js-newsletter-msg');
-                if (msg) {
-                    msg.classList.add('show');
-                    setTimeout(() => msg.classList.remove('show'), 4000);
+                const button = form.querySelector('button[type="submit"]');
+                if (button) button.disabled = true;
+                try {
+                    const response = await fetch('/api/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ type: 'newsletter', email: input.value })
+                    });
+                    if (!response.ok) throw new Error('Subscription failed');
+                    if (msg) {
+                        msg.textContent = '✓ Thanks! You’re on the list.';
+                        msg.classList.add('show');
+                        setTimeout(() => msg.classList.remove('show'), 4000);
+                    }
+                    form.reset();
+                } catch (error) {
+                    if (msg) {
+                        msg.textContent = 'Could not subscribe right now. Please try again.';
+                        msg.classList.add('show');
+                    }
+                } finally {
+                    if (button) button.disabled = false;
                 }
-                form.reset();
             });
         });
 
