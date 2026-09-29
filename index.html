@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a4a8d">
-    <title>Saint Maurus Catholic Church Youth</title>
+    <title>St. Maurus Church Youth | Youth Serving Christ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,16 +14,16 @@
             --primary: #1a4a8d;
             --primary-dark: #123566;
             --primary-light: #2f6bc4;
-            --secondary: #d4af37;
-            --secondary-light: #f2d675;
-            --accent: #8b0000;
+            --secondary: #1a7f4f;
+            --secondary-light: #3ec27f;
+            --accent: #0b0f14;
             --light: #f5f7fb;
             --dark: #171b21;
             --gray: #6c757d;
             --line: rgba(23, 27, 33, .08);
 
             --grad-primary: linear-gradient(135deg, #1a4a8d 0%, #2f6bc4 100%);
-            --grad-gold: linear-gradient(135deg, #d4af37 0%, #f2d675 100%);
+            --grad-gold: linear-gradient(135deg, #157a47 0%, #3ec27f 100%);
             --grad-dark: linear-gradient(160deg, #11151b 0%, #1c2531 100%);
 
             --shadow-xs: 0 1px 2px rgba(16, 32, 64, .06);
@@ -58,7 +58,7 @@
             --heading: var(--primary);
             --page-bg:
                 radial-gradient(1100px 560px at 8% -12%, rgba(47, 107, 196, .13), transparent 60%),
-                radial-gradient(900px 520px at 102% 2%, rgba(212, 175, 55, .14), transparent 58%),
+                radial-gradient(900px 520px at 102% 2%, rgba(26, 127, 79, .14), transparent 58%),
                 #f4f6fb;
         }
 
@@ -81,7 +81,7 @@
             --heading: #93b8f0;
             --page-bg:
                 radial-gradient(1100px 560px at 8% -12%, rgba(47, 107, 196, .18), transparent 60%),
-                radial-gradient(900px 520px at 102% 2%, rgba(212, 175, 55, .12), transparent 58%),
+                radial-gradient(900px 520px at 102% 2%, rgba(26, 127, 79, .12), transparent 58%),
                 #0d1117;
         }
 
@@ -115,7 +115,7 @@
             border-radius: 6px;
         }
 
-        ::selection { background: rgba(212, 175, 55, .35); }
+        ::selection { background: rgba(26, 127, 79, .35); }
 
         ::-webkit-scrollbar { width: 11px; height: 11px; }
         ::-webkit-scrollbar-track { background: #e9edf5; }
@@ -153,7 +153,7 @@
             z-index: 1100;
             pointer-events: none;
             transition: width .1s linear;
-            box-shadow: 0 0 12px rgba(212, 175, 55, .6);
+            box-shadow: 0 0 12px rgba(26, 127, 79, .6);
         }
 
         /* =========================================================
@@ -252,7 +252,7 @@
             background: rgba(255, 255, 255, .14);
             border: 1px solid rgba(255, 255, 255, .18);
         }
-        .header-top .social-links a:hover { background: var(--grad-gold); color: #20160a; transform: translateY(-3px); }
+        .header-top .social-links a:hover { background: var(--grad-gold); color: #ffffff; transform: translateY(-3px); }
 
         .header-main {
             display: flex;
@@ -346,14 +346,14 @@
             box-shadow: var(--shadow-glow);
         }
         [data-theme="dark"] .theme-toggle {
-            color: #f2d675;
-            background: rgba(212, 175, 55, .12);
-            border-color: rgba(212, 175, 55, .3);
+            color: #3ec27f;
+            background: rgba(26, 127, 79, .12);
+            border-color: rgba(26, 127, 79, .3);
         }
         [data-theme="dark"] .theme-toggle:hover {
             background: var(--grad-gold);
-            color: #20160a;
-            box-shadow: 0 16px 40px rgba(212, 175, 55, .38);
+            color: #ffffff;
+            box-shadow: 0 16px 40px rgba(26, 127, 79, .38);
         }
 
         .header-actions { display: flex; align-items: center; }
@@ -454,7 +454,7 @@
             width: 520px; height: 520px;
             border-radius: 50%;
             top: -220px; right: -140px;
-            background: radial-gradient(circle, rgba(212, 175, 55, .40), transparent 65%);
+            background: radial-gradient(circle, rgba(26, 127, 79, .40), transparent 65%);
             animation: floaty 15s ease-in-out infinite;
             z-index: -1;
             pointer-events: none;
@@ -513,7 +513,7 @@
             justify-content: center;
             gap: 8px;
             background: var(--grad-gold);
-            color: #20160a;
+            color: #ffffff;
             padding: 12px 26px;
             border: none;
             border-radius: var(--radius-pill);
@@ -523,7 +523,7 @@
             font-size: .95rem;
             letter-spacing: .01em;
             cursor: pointer;
-            box-shadow: 0 12px 26px rgba(212, 175, 55, .34);
+            box-shadow: 0 12px 26px rgba(26, 127, 79, .34);
             transition: transform var(--t), box-shadow var(--t), filter var(--t);
         }
 
@@ -538,7 +538,7 @@
             pointer-events: none;
         }
         .btn:hover::after { left: 140%; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 18px 38px rgba(212, 175, 55, .46); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 18px 38px rgba(26, 127, 79, .46); }
         .btn:active { transform: translateY(-1px) scale(.99); }
 
         .btn-primary {
@@ -699,13 +699,13 @@
             position: absolute;
             top: -60%; left: -60%;
             width: 220%; height: 220%;
-            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, .16), transparent 55%);
+            background: radial-gradient(circle at 50% 50%, rgba(26, 127, 79, .16), transparent 55%);
             opacity: 0;
             transition: opacity .6s var(--ease);
             pointer-events: none;
         }
         .ministry-card:hover::after { opacity: 1; }
-        .ministry-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); border-color: rgba(212, 175, 55, .4); }
+        .ministry-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); border-color: rgba(26, 127, 79, .4); }
 
         .ministry-icon {
             width: 76px; height: 76px;
@@ -968,7 +968,7 @@
         .gallery-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(160deg, rgba(26, 74, 141, .78), rgba(212, 175, 55, .55));
+            background: linear-gradient(160deg, rgba(26, 74, 141, .78), rgba(26, 127, 79, .55));
             display: flex; align-items: center; justify-content: center;
             opacity: 0;
             transition: opacity .45s var(--ease);
@@ -997,7 +997,7 @@
             margin-bottom: 20px;
             padding-bottom: 12px;
             font-size: clamp(1.3rem, 3.4vw, 1.7rem);
-            border-bottom: 2px solid rgba(212, 175, 55, .45);
+            border-bottom: 2px solid rgba(26, 127, 79, .45);
         }
 
         .two-column { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: center; }
@@ -1046,7 +1046,7 @@
             transition: transform .45s var(--ease);
         }
         .belief-item:hover::before { transform: scaleY(1); }
-        .belief-item:hover { transform: translateX(7px); box-shadow: var(--shadow-md); border-color: rgba(212, 175, 55, .4); }
+        .belief-item:hover { transform: translateX(7px); box-shadow: var(--shadow-md); border-color: rgba(26, 127, 79, .4); }
         .belief-item h3 { color: var(--heading); margin-bottom: 8px; font-size: 1.02rem; }
 
         /* =========================================================
@@ -1161,17 +1161,17 @@
         }
 
         .calendar-day.today {
-            background: #fffaf0;
+            background: #f0fdf6;
             box-shadow: inset 0 0 0 2px var(--secondary);
         }
-        [data-theme="dark"] .calendar-day.today { background: rgba(212, 175, 55, .14); }
+        [data-theme="dark"] .calendar-day.today { background: rgba(26, 127, 79, .14); }
 
         .day-number { font-weight: 700; margin-bottom: 4px; }
 
         .calendar-event {
             font-size: .68rem;
             background: var(--grad-gold);
-            color: #20160a;
+            color: #ffffff;
             font-weight: 600;
             padding: 2px 5px;
             border-radius: 5px;
@@ -1281,7 +1281,7 @@
             box-shadow: var(--shadow-sm);
             transition: transform var(--t), box-shadow var(--t), border-color var(--t);
         }
-        .resource-item:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: rgba(212, 175, 55, .45); }
+        .resource-item:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: rgba(26, 127, 79, .45); }
 
         .resource-icon {
             font-size: 1.8rem;
@@ -1315,11 +1315,11 @@
 
         .blog-meta {
             padding: 15px 22px;
-            background: linear-gradient(90deg, rgba(26, 74, 141, .06), rgba(212, 175, 55, .08));
+            background: linear-gradient(90deg, rgba(26, 74, 141, .06), rgba(26, 127, 79, .08));
             font-size: .85rem;
             color: var(--text-muted);
         }
-        [data-theme="dark"] .blog-meta { background: linear-gradient(90deg, rgba(47, 107, 196, .14), rgba(212, 175, 55, .10)); }
+        [data-theme="dark"] .blog-meta { background: linear-gradient(90deg, rgba(47, 107, 196, .14), rgba(26, 127, 79, .10)); }
 
         .blog-meta span i { color: var(--secondary); margin-right: 5px; }
         .blog-content { padding: 22px; }
@@ -1491,9 +1491,9 @@
         }
         .social-links a:hover {
             background: var(--grad-gold);
-            color: #20160a;
+            color: #ffffff;
             transform: translateY(-4px) rotate(6deg);
-            box-shadow: 0 12px 24px rgba(212, 175, 55, .38);
+            box-shadow: 0 12px 24px rgba(26, 127, 79, .38);
         }
 
         /* Footer newsletter */
@@ -1526,7 +1526,7 @@
             border-radius: 10px;
             border: none;
             background: var(--grad-gold);
-            color: #20160a;
+            color: #ffffff;
             font-weight: 700;
             cursor: pointer;
             font-size: .9rem;
@@ -1535,7 +1535,7 @@
         }
         .footer-newsletter button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, .4);
+            box-shadow: 0 10px 20px rgba(26, 127, 79, .4);
         }
         .footer-newsletter-msg {
             font-size: .82rem;
@@ -1772,14 +1772,12 @@
             <div class="container">
                 <div class="header-top-content">
                     <div class="contact-info">
-                        <i class="fas fa-phone"></i> +254 793 826442 &nbsp; | &nbsp;
-                        <i class="fas fa-envelope"></i> youth@saintmaurus.org
+                        <i class="fas fa-phone"></i> 0112 818587 &nbsp;|&nbsp; 0700 488222 &nbsp;|&nbsp;
+                        <i class="fab fa-whatsapp"></i> Join via WhatsApp group invite
                     </div>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -1787,10 +1785,10 @@
         <div class="container">
             <div class="header-main">
                 <div class="logo">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhNGE4ZCIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q0YWYzNyIgc3Ryb2tlLXdpZHRoPSI4Ii8+PHBhdGggZD0iTTEwMCA2MHY4MG0yMC00MGgtNDBtNTAgMjBoLTcwIiBzdHJva2U9IiNkNGFmMzciIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZDhhZjM3IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPllPVU5HPC90ZXh0Pjwvc3ZnPg==" alt="Saint Maurus Catholic Church Youth Logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhNGE4ZCIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE1N2E0NyIgc3Ryb2tlLXdpZHRoPSI4Ii8+PHBhdGggZD0iTTEwMCA2MHY4MG0yMC00MGgtNDBtNTAgMjBoLTcwIiBzdHJva2U9IiMxNTdhNDciIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjEwMCIgeT0iMTQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjM2VjMjdmIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPllTQzwvdGV4dD48L3N2Zz4=" alt="St. Maurus Church Youth Serving Christ Logo">
                     <div class="logo-text">
-                        <h1>Saint Maurus Catholic Church</h1>
-                        <p>Youth Ministry</p>
+                        <h1>St. Maurus Church</h1>
+                        <p>Youth Serving Christ</p>
                     </div>
                 </div>
 
@@ -1868,8 +1866,8 @@
         <section id="home" class="page">
             <section class="hero">
                 <div class="container">
-                    <h2>Welcome to Saint Maurus Catholic Church Youth</h2>
-                    <p>Growing in faith, building community, and serving others together as young disciples of Christ.</p>
+                    <h2>Welcome to St. Maurus Church Youth</h2>
+                    <p>Connected in Faith, Driven by Love, United in Christ.</p>
                     <a href="#get-involved" class="btn nav-link">Join Us Today</a>
                 </div>
             </section>
@@ -1884,7 +1882,7 @@
                         <div class="ministry-card">
                             <div class="ministry-icon"><i class="fas fa-music"></i></div>
                             <h3>Youth Choir</h3>
-                            <p>Join our vibrant youth choir and praise God through music every Sunday and at special events.</p>
+                            <p>Join our vibrant youth choir and praise God through music. The choir meets as part of our Sunday gatherings at St. Maurus Church.</p>
                             <a href="#ministries" class="btn btn-sm nav-link">Learn More</a>
                         </div>
                         <div class="ministry-card">
@@ -1896,7 +1894,7 @@
                         <div class="ministry-card">
                             <div class="ministry-icon"><i class="fas fa-pray"></i></div>
                             <h3>Prayer Group</h3>
-                            <p>Deepen your prayer life and connect with God in our weekly youth prayer meetings.</p>
+                            <p>Deepen your prayer life and connect with God in our youth prayer meetings. Prayer requests are handled by our Liturgist, Stella.</p>
                             <a href="#ministries" class="btn btn-sm nav-link">Learn More</a>
                         </div>
                         <div class="ministry-card">
@@ -1917,33 +1915,33 @@
                     </div>
                     <div class="event-list">
                         <div class="event-item">
-                            <div class="event-date"><div class="day">15</div><div class="month">June</div></div>
+                            <div class="event-date"><div class="day">Sun</div><div class="month">Weekly</div></div>
                             <div class="event-details">
-                                <h3>Youth Summer Retreat</h3>
-                                <p><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</p>
-                                <p><i class="fas fa-map-marker-alt"></i> Saint Maurus Retreat Center</p>
-                                <p>A day of prayer, fellowship, and fun activities for all youth members.</p>
-                                <a href="#" class="btn btn-sm event-register-btn" data-event="Youth Summer Retreat">Register</a>
+                                <h3>Sunday Youth Meeting</h3>
+                                <p><i class="far fa-clock"></i> Every Sunday</p>
+                                <p><i class="fas fa-map-marker-alt"></i> St. Maurus Church</p>
+                                <p>Our regular youth gathering, which includes the Youth Choir. Come and grow with us.</p>
+                                <a href="#" class="btn btn-sm event-register-btn" data-event="Sunday Youth Meeting">Join Us</a>
                             </div>
                         </div>
                         <div class="event-item">
-                            <div class="event-date"><div class="day">22</div><div class="month">June</div></div>
+                            <div class="event-date"><div class="day">Oct</div><div class="month">Late</div></div>
                             <div class="event-details">
-                                <h3>Community Service Day</h3>
-                                <p><i class="far fa-clock"></i> 8:00 AM - 12:00 PM</p>
-                                <p><i class="fas fa-map-marker-alt"></i> Local Shelter</p>
-                                <p>Join us as we serve meals at the local homeless shelter.</p>
-                                <a href="#" class="btn btn-sm event-register-btn" data-event="Community Service Day">Sign Up</a>
+                                <h3>Nakuru Team Building Trip</h3>
+                                <p><i class="far fa-clock"></i> Late October</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Nakuru</p>
+                                <p>Getting back in touch with nature and enjoying a good vibe together as one ministry.</p>
+                                <a href="#" class="btn btn-sm event-register-btn" data-event="Nakuru Team Building Trip">Sign Up</a>
                             </div>
                         </div>
                         <div class="event-item">
-                            <div class="event-date"><div class="day">29</div><div class="month">June</div></div>
+                            <div class="event-date"><div class="day"><i class="fas fa-cross"></i></div><div class="month">Annual</div></div>
                             <div class="event-details">
-                                <h3>Youth Mass & Social</h3>
-                                <p><i class="far fa-clock"></i> 5:00 PM - 8:00 PM</p>
-                                <p><i class="fas fa-map-marker-alt"></i> Saint Maurus Church</p>
-                                <p>Special youth-focused Mass followed by pizza and games in the parish hall.</p>
-                                <a href="#" class="btn btn-sm event-register-btn" data-event="Youth Mass & Social">RSVP</a>
+                                <h3>Yearly Youth Retreat</h3>
+                                <p><i class="far fa-clock"></i> Dates announced each year</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Retreat Centre</p>
+                                <p>Our major annual event — a time of prayer, fellowship and renewal for the whole youth ministry.</p>
+                                <a href="#" class="btn btn-sm event-register-btn" data-event="Yearly Youth Retreat">RSVP</a>
                             </div>
                         </div>
                     </div>
@@ -1956,36 +1954,36 @@
             <section class="section">
                 <div class="container">
                     <div class="section-title">
-                        <h2>Latest Sermons</h2>
+                        <h2>Latest Talks</h2>
                         <p>Messages to inspire and guide your faith journey</p>
                     </div>
                     <div class="card-grid">
                         <div class="card">
-                            <div class="card-img"><img src="images/313231.jpg" alt="Fr. Michael preaching" loading="lazy"></div>
+                            <div class="card-img"><img src="images/313231.jpg" alt="Youth talk" loading="lazy"></div>
                             <div class="card-content">
                                 <h3>The Power of Faith in Difficult Times</h3>
-                                <p><strong>Speaker:</strong> Mr. Anold Nyakwankwa</p>
+                                <p><strong>Speaker:</strong> Melchizedek Okodoi, Moderator</p>
                                 <p><strong>Date:</strong> June 2, 2025</p>
                                 <p>Exploring how our faith can be a source of strength when facing life's challenges.</p>
                                 <a href="#sermons" class="btn btn-sm nav-link">Listen Now</a>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-img"><img src="images/5343233.jpg" alt="Youth Minister Sarah speaking" loading="lazy"></div>
+                            <div class="card-img"><img src="images/5343233.jpg" alt="Youth leader speaking" loading="lazy"></div>
                             <div class="card-content">
                                 <h3>Living Your Faith as a Young Catholic</h3>
-                                <p><strong>Speaker:</strong> Steph London, Youth Minister</p>
+                                <p><strong>Speaker:</strong> Vincent Kibe, Vice Moderator</p>
                                 <p><strong>Date:</strong> May 26, 2025</p>
                                 <p>Practical ways to integrate your Catholic faith into daily life as a young person.</p>
                                 <a href="#sermons" class="btn btn-sm nav-link">Listen Now</a>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-img"><img src="images/Youth_hangouts.jpg" alt="Guest speaker" loading="lazy"></div>
+                            <div class="card-img"><img src="images/Youth_hangouts.jpg" alt="Youth gathering" loading="lazy"></div>
                             <div class="card-content">
                                 <h3>The Eucharist: Source and Summit</h3>
-                                <p><strong>Speaker:</strong> Deacon Robert Williams</p>
-                                <p><strong>Date:</strong> May 19, 2024</p>
+                                <p><strong>Speaker:</strong> Stella, Liturgist</p>
+                                <p><strong>Date:</strong> May 19, 2025</p>
                                 <p>Understanding the profound significance of the Eucharist in our Catholic faith.</p>
                                 <a href="#sermons" class="btn btn-sm nav-link">Listen Now</a>
                             </div>
@@ -2004,9 +2002,9 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="testimonial-head">
-                                    <img src="images/kareeen-402.jpg" alt="Emily" class="avatar" loading="lazy">
+                                    <img src="images/kareeen-402.jpg" alt="Youth member" class="avatar" loading="lazy">
                                     <div>
-                                        <h3>Emily Rodriguez</h3>
+                                        <h3>Innocent Sikenyi</h3>
                                         <p style="color: var(--text-muted); font-size: 0.9rem;">High School Senior</p>
                                     </div>
                                 </div>
@@ -2016,7 +2014,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="testimonial-head">
-                                    <img src="images/t545.jpg" alt="Marcus" class="avatar" loading="lazy">
+                                    <img src="images/t545.jpg" alt="Youth member" class="avatar" loading="lazy">
                                     <div>
                                         <h3>Marcus Johnson</h3>
                                         <p style="color: var(--text-muted); font-size: 0.9rem;">College Freshman</p>
@@ -2028,7 +2026,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="testimonial-head">
-                                    <img src="images/12321.jpg" alt="Sophia" class="avatar" loading="lazy">
+                                    <img src="images/12321.jpg" alt="Youth member" class="avatar" loading="lazy">
                                     <div>
                                         <h3>Sophia Chen</h3>
                                         <p style="color: var(--text-muted); font-size: 0.9rem;">High School Junior</p>
@@ -2064,8 +2062,8 @@
                         <div class="two-column">
                             <div>
                                 <h2>Our Mission</h2>
-                                <p>The Saint Maurus Catholic Church Youth Ministry exists to lead young people into a lifelong relationship with Jesus Christ and His Church. We strive to create a welcoming environment where youth can grow in faith, build authentic community, and discover their God-given purpose.</p>
-                                <p>Through prayer, formation, service, and fellowship, we empower young disciples to live out their Catholic faith with joy and conviction in today's world.</p>
+                                <p>St. Maurus Church Youth — <strong>Youth Serving Christ</strong> — exists to lead young people into a lifelong relationship with Jesus Christ and His Church. We strive to create a welcoming environment where youth can grow in faith, build authentic community, and discover their God-given purpose.</p>
+                                <p>Our motto says it all: <em>Connected in Faith, Driven by Love, United in Christ.</em> Through prayer, formation, service, and fellowship, we empower young disciples to live out their Catholic faith with joy and conviction in today's world.</p>
                             </div>
                             <div><img src="images/kareeen-402.jpg" alt="Youth group gathering" class="img-fluid" loading="lazy"></div>
                         </div>
@@ -2073,8 +2071,8 @@
 
                     <div class="content-section">
                         <h2>Our History</h2>
-                        <p>Saint Maurus Catholic Church Youth Ministry was established in 1995 with just a handful of dedicated young people meeting in the church basement. Over the past 25+ years, our ministry has grown to become one of the most vibrant youth programs in the diocese.</p>
-                        <p>We've witnessed countless young lives transformed through encounters with Christ, and many of our alumni have gone on to serve in various ministries within the Church.</p>
+                        <p>St. Maurus Church Youth Ministry has grown over the years into one of the most vibrant youth programmes in the parish, gathering every Sunday at St. Maurus Church in Mathare North, Nairobi.</p>
+                        <p>We've witnessed countless young lives transformed through encounters with Christ, and many of our members have gone on to serve in various ministries within the Church.</p>
                     </div>
 
                     <div class="content-section">
@@ -2151,40 +2149,76 @@
                         <p>Meet the dedicated individuals who guide and serve our youth ministry.</p>
 
                         <div class="leader-card">
-                            <div class="leader-img"><img src="images/download (3).jpeg" alt="Mr. Anold Nyakwankwa" loading="lazy"></div>
+                            <div class="leader-img"><img src="images/download (3).jpeg" alt="Melchizedek Okodoi" loading="lazy"></div>
                             <div class="leader-info">
-                                <h3>Mr. Anold Nyakwankwa</h3>
-                                <p><strong>Parish Priest & Spiritual Director</strong></p>
-                                <p>Mr. Anold has been serving at Saint Maurus for 28 years. He brings a passion for youth ministry and a deep commitment to helping young people encounter Christ.</p>
+                                <h3>Melchizedek Okodoi</h3>
+                                <p><strong>Moderator (Main Leader)</strong></p>
+                                <p>Melchizedek leads the Youth Serving Christ ministry, providing overall direction and spiritual oversight for all youth activities at St. Maurus Church.</p>
                             </div>
                         </div>
 
                         <div class="leader-card">
-                            <div class="leader-img"><img src="images/download (3).jfif" alt="Alexander Nzioka" loading="lazy"></div>
+                            <div class="leader-img"><img src="images/download (3).jfif" alt="Vincent Kibe" loading="lazy"></div>
                             <div class="leader-info">
-                                <h3>Alexander Nzioka</h3>
-                                <p><strong>Youth Minister</strong></p>
-                                <p>Alexander joined our team 3 years ago after completing his degree in theology. He coordinates all youth activities and provides pastoral care to our young people.</p>
+                                <h3>Vincent Kibe</h3>
+                                <p><strong>Vice Moderator</strong></p>
+                                <p>Vincent supports the Moderator and coordinates the ministry's day-to-day communication. Reach him on 0112 818587.</p>
                             </div>
                         </div>
 
                         <div class="leader-card">
-                            <div class="leader-img"><img src="images/299581d1-4458-483f-bfc8-b4081b951d0f.jpeg" alt="Melkizedech Athis" loading="lazy"></div>
+                            <div class="leader-img"><img src="images/299581d1-4458-483f-bfc8-b4081b951d0f.jpeg" alt="Lorna Kadide" loading="lazy"></div>
                             <div class="leader-info">
-                                <h3>Melkizedech Athis</h3>
-                                <p><strong>Assistant Youth Minister</strong></p>
-                                <p>Melkizedech is a recent college graduate who felt called to youth ministry. He focuses on middle school youth and outreach programs.</p>
+                                <h3>Lorna Kadide</h3>
+                                <p><strong>Secretary</strong></p>
+                                <p>Lorna keeps the ministry organised — handling records, minutes and correspondence for all youth meetings and events.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-img"><img src="images/download (2).jpg" alt="James Griffings" loading="lazy"></div>
+                            <div class="leader-info">
+                                <h3>James Griffings</h3>
+                                <p><strong>Organising Secretary</strong></p>
+                                <p>James plans and coordinates our events, trips and retreats — including the upcoming Nakuru Team Building Trip.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-img"><img src="images/yh64.jpg" alt="Agnes Njeri" loading="lazy"></div>
+                            <div class="leader-info">
+                                <h3>Agnes Njeri</h3>
+                                <p><strong>Treasurer</strong></p>
+                                <p>Agnes manages the ministry's finances, ensuring every shilling is used responsibly for the good of the youth.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-img"><img src="images/g755.jpg" alt="Charity Chumba" loading="lazy"></div>
+                            <div class="leader-info">
+                                <h3>Charity Chumba</h3>
+                                <p><strong>Welfare Secretary (Donations)</strong></p>
+                                <p>Charity leads our welfare and giving efforts. All donations and giving are routed directly through her on <strong>0111 916127</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-img"><img src="images/download.jfif" alt="Stella" loading="lazy"></div>
+                            <div class="leader-info">
+                                <h3>Stella</h3>
+                                <p><strong>Liturgist (Prayer Requests)</strong></p>
+                                <p>Stella coordinates our liturgical life and prayer. All prayer requests are routed directly to her on <strong>0105 515253</strong>.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="content-section">
-                        <h2>Youth Leadership Team</h2>
-                        <p>Our youth leadership team consists of dedicated high school students who help plan and lead various aspects of our ministry.</p>
+                        <h2>Ministry Contacts</h2>
+                        <p>Reach the right person directly for the fastest response.</p>
                         <div class="card-grid">
-                            <div class="card"><div class="card-content"><h3>Emily Rodriguez</h3><p><strong>President</strong></p><p>Senior at Central High School</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Marcus Johnson</h3><p><strong>Vice President</strong></p><p>Freshman at State University</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Sophia Chen</h3><p><strong>Service Coordinator</strong></p><p>Junior at Central High School</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Donations &amp; Giving</h3><p><strong>Charity Chumba</strong><br>Welfare Secretary</p><p><i class="fas fa-phone" style="color: var(--secondary);"></i> 0111 916127</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Prayer Requests</h3><p><strong>Stella</strong><br>Liturgist</p><p><i class="fas fa-phone" style="color: var(--secondary);"></i> 0105 515253</p></div></div>
+                            <div class="card"><div class="card-content"><h3>General Enquiries</h3><p><strong>Vincent Kibe</strong><br>Vice Moderator / Secretary</p><p><i class="fas fa-phone" style="color: var(--secondary);"></i> 0112 818587 &nbsp;|&nbsp; 0700 488222</p></div></div>
                         </div>
                     </div>
                 </div>
@@ -2195,7 +2229,7 @@
         <section id="sermons" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Sermons & Media</h1>
+                    <h1>Talks &amp; Media</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2207,34 +2241,34 @@
             <div class="page-content">
                 <div class="container">
                     <div class="tabs">
-                        <div class="tab active" data-tab="audio">Audio Sermons</div>
-                        <div class="tab" data-tab="video">Video Sermons</div>
-                        <div class="tab" data-tab="podcast">Podcast</div>
+                        <div class="tab active" data-tab="audio">Audio Talks</div>
+                        <div class="tab" data-tab="video">Video</div>
+                        <div class="tab" data-tab="podcast">Ministry Updates</div>
                     </div>
 
                     <div class="tab-content active" id="audio-tab">
-                        <h2>Recent Audio Sermons</h2>
+                        <h2>Recent Audio Talks</h2>
                         <div class="card-grid">
                             <div class="card"><div class="card-content">
                                 <h3>The Power of Faith in Difficult Times</h3>
-                                <p><strong>Speaker:</strong> Mr. Anold Nyakwankwa</p>
-                                <p><strong>Date:</strong> June 2, 2024</p>
+                                <p><strong>Speaker:</strong> Melchizedek Okodoi, Moderator</p>
+                                <p><strong>Date:</strong> June 2, 2025</p>
                                 <p><strong>Length:</strong> 25:42</p>
                                 <audio controls style="width: 100%; margin: 15px 0;"><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
                                 <a href="#" class="btn btn-sm">Download</a>
                             </div></div>
                             <div class="card"><div class="card-content">
                                 <h3>Living Your Faith as a Young Catholic</h3>
-                                <p><strong>Speaker:</strong> Alexander Nzioka</p>
-                                <p><strong>Date:</strong> May 26, 2024</p>
+                                <p><strong>Speaker:</strong> Vincent Kibe, Vice Moderator</p>
+                                <p><strong>Date:</strong> May 26, 2025</p>
                                 <p><strong>Length:</strong> 22:15</p>
                                 <audio controls style="width: 100%; margin: 15px 0;"><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
                                 <a href="#" class="btn btn-sm">Download</a>
                             </div></div>
                             <div class="card"><div class="card-content">
                                 <h3>The Eucharist: Source and Summit</h3>
-                                <p><strong>Speaker:</strong> Deacon Robert Williams</p>
-                                <p><strong>Date:</strong> May 19, 2024</p>
+                                <p><strong>Speaker:</strong> Stella, Liturgist</p>
+                                <p><strong>Date:</strong> May 19, 2025</p>
                                 <p><strong>Length:</strong> 28:03</p>
                                 <audio controls style="width: 100%; margin: 15px 0;"><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
                                 <a href="#" class="btn btn-sm">Download</a>
@@ -2243,14 +2277,14 @@
                     </div>
 
                     <div class="tab-content" id="video-tab">
-                        <h2>Recent Video Sermons</h2>
+                        <h2>Recent Video</h2>
                         <div class="card-grid">
                             <div class="card">
                                 <div class="card-img"><img src="images/yh64.jpg" alt="Video thumbnail" loading="lazy"></div>
                                 <div class="card-content">
                                     <h3>Finding God in Everyday Life</h3>
-                                    <p><strong>Speaker:</strong> Mr. Anold Nyakwankwa</p>
-                                    <p><strong>Date:</strong> May 12, 2024</p>
+                                    <p><strong>Speaker:</strong> Melchizedek Okodoi, Moderator</p>
+                                    <p><strong>Date:</strong> May 12, 2025</p>
                                     <p><strong>Length:</strong> 32:18</p>
                                     <a href="#" class="btn btn-sm">Watch Now</a>
                                 </div>
@@ -2259,7 +2293,7 @@
                                 <div class="card-img"><img src="images/g755.jpg" alt="Video thumbnail" loading="lazy"></div>
                                 <div class="card-content">
                                     <h3>Building Christian Friendships</h3>
-                                    <p><strong>Speaker:</strong> Alexander Kathanzu</p>
+                                    <p><strong>Speaker:</strong> Lorna Kadide, Secretary</p>
                                     <p><strong>Date:</strong> May 20, 2025</p>
                                     <p><strong>Length:</strong> 26:45</p>
                                     <a href="#" class="btn btn-sm">Watch Now</a>
@@ -2269,8 +2303,8 @@
                                 <div class="card-img"><img src="images/download.jfif" alt="Video thumbnail" loading="lazy"></div>
                                 <div class="card-content">
                                     <h3>The Role of the Holy Spirit</h3>
-                                    <p><strong>Speaker:</strong> Monicah Wambui</p>
-                                    <p><strong>Date:</strong> April 28, 2024</p>
+                                    <p><strong>Speaker:</strong> Agnes Njeri, Treasurer</p>
+                                    <p><strong>Date:</strong> April 28, 2025</p>
                                     <p><strong>Length:</strong> 24:32</p>
                                     <a href="#" class="btn btn-sm">Watch Now</a>
                                 </div>
@@ -2279,41 +2313,40 @@
                     </div>
 
                     <div class="tab-content" id="podcast-tab">
-                        <h2>Youth Ministry Podcast</h2>
-                        <p>Subscribe to our podcast for weekly reflections, interviews, and faith discussions tailored for young Catholics.</p>
+                        <h2>Ministry Updates</h2>
+                        <p>Subscribe to receive ministry updates, event reminders and reflections for young Catholics at St. Maurus Church.</p>
                         <div class="card">
                             <div class="card-content">
-                                <h3>Latest Episode: "Faith in the Digital Age"</h3>
-                                <p><strong>Hosts:</strong> Alexander Nzioka & Youth Leadership Team</p>
-                                <p><strong>Date:</strong> June 5, 2024</p>
-                                <p>In this episode, we discuss how to maintain a strong faith life while navigating social media and technology.</p>
+                                <h3>Latest Update: "Preparing for the Nakuru Trip"</h3>
+                                <p><strong>Hosts:</strong> James Griffings &amp; the Youth Leadership Team</p>
+                                <p><strong>Date:</strong> October 2025</p>
+                                <p>In this update we share the plan for the Nakuru Team Building Trip — getting back in touch with nature and enjoying a good vibe together.</p>
                                 <audio controls style="width: 100%; margin: 15px 0;"><source src="#" type="audio/mpeg">Your browser does not support the audio element.</audio>
                                 <div class="mt-20">
-                                    <a href="#" class="btn btn-sm"><i class="fab fa-spotify"></i> Spotify</a>
-                                    <a href="#" class="btn btn-sm"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                                    <a href="#" class="btn btn-sm"><i class="fab fa-google"></i> Google Podcasts</a>
+                                    <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-tiktok"></i> TikTok</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Podcast subscribe form -->
+                        <!-- Subscribe form -->
                         <div class="form-card mt-30">
-                            <h3><i class="fas fa-podcast" style="color: var(--secondary); margin-right: 8px;"></i> Get New Episodes by Email</h3>
-                            <p>Be the first to know when a new episode drops. We'll send you a short email with the latest episode and show notes.</p>
+                            <h3><i class="fas fa-bell" style="color: var(--secondary); margin-right: 8px;"></i> Get Ministry Updates</h3>
+                            <p>Be the first to know when a new update or event is announced.</p>
                             <form class="js-demo-form" novalidate>
-                                <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! You're subscribed — check your inbox for confirmation.</div>
+                                <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! You're on the list — we'll be in touch via WhatsApp.</div>
                                 <div class="form-grid">
                                     <div class="form-group">
                                         <label for="podcast-name">Your Name <span class="req">*</span></label>
                                         <input type="text" class="form-control" id="podcast-name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="podcast-email">Email Address <span class="req">*</span></label>
-                                        <input type="email" class="form-control" id="podcast-email" required>
+                                        <label for="podcast-email">Phone / Email <span class="req">*</span></label>
+                                        <input type="text" class="form-control" id="podcast-email" required>
                                     </div>
                                 </div>
                                 <button type="submit" class="form-submit"><i class="fas fa-bell"></i> Subscribe</button>
-                                <p class="form-note"><i class="fas fa-lock"></i> We respect your inbox. Unsubscribe any time.</p>
+                                <p class="form-note"><i class="fas fa-lock"></i> We respect your privacy. Unsubscribe any time.</p>
                             </form>
                         </div>
                     </div>
@@ -2325,7 +2358,7 @@
         <section id="events" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Events & Calendar</h1>
+                    <h1>Events &amp; Calendar</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2342,33 +2375,33 @@
                                 <h2>Upcoming Events</h2>
                                 <div class="event-list">
                                     <div class="event-item">
-                                        <div class="event-date"><div class="day">15</div><div class="month">June</div></div>
+                                        <div class="event-date"><div class="day">Sun</div><div class="month">Weekly</div></div>
                                         <div class="event-details">
-                                            <h3>Youth Summer Retreat</h3>
-                                            <p><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</p>
-                                            <p><i class="fas fa-map-marker-alt"></i> Saint Maurus Retreat Center</p>
-                                            <p>A day of prayer, fellowship, and fun activities for all youth members.</p>
-                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Youth Summer Retreat">Register</a>
+                                            <h3>Sunday Youth Meeting</h3>
+                                            <p><i class="far fa-clock"></i> Every Sunday</p>
+                                            <p><i class="fas fa-map-marker-alt"></i> St. Maurus Church</p>
+                                            <p>Our regular youth gathering, which includes the Youth Choir. Come and grow with us.</p>
+                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Sunday Youth Meeting">Join Us</a>
                                         </div>
                                     </div>
                                     <div class="event-item">
-                                        <div class="event-date"><div class="day">22</div><div class="month">June</div></div>
+                                        <div class="event-date"><div class="day">Oct</div><div class="month">Late</div></div>
                                         <div class="event-details">
-                                            <h3>Community Service Day</h3>
-                                            <p><i class="far fa-clock"></i> 8:00 AM - 12:00 PM</p>
-                                            <p><i class="fas fa-map-marker-alt"></i> Local Shelter</p>
-                                            <p>Join us as we serve meals at the local homeless shelter.</p>
-                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Community Service Day">Sign Up</a>
+                                            <h3>Nakuru Team Building Trip</h3>
+                                            <p><i class="far fa-clock"></i> Late October</p>
+                                            <p><i class="fas fa-map-marker-alt"></i> Nakuru</p>
+                                            <p>Getting back in touch with nature and enjoying a good vibe together as one ministry.</p>
+                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Nakuru Team Building Trip">Sign Up</a>
                                         </div>
                                     </div>
                                     <div class="event-item">
-                                        <div class="event-date"><div class="day">29</div><div class="month">June</div></div>
+                                        <div class="event-date"><div class="day"><i class="fas fa-cross"></i></div><div class="month">Annual</div></div>
                                         <div class="event-details">
-                                            <h3>Youth Mass & Social</h3>
-                                            <p><i class="far fa-clock"></i> 5:00 PM - 8:00 PM</p>
-                                            <p><i class="fas fa-map-marker-alt"></i> Saint Maurus Church</p>
-                                            <p>Special youth-focused Mass followed by pizza and games in the parish hall.</p>
-                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Youth Mass & Social">RSVP</a>
+                                            <h3>Yearly Youth Retreat</h3>
+                                            <p><i class="far fa-clock"></i> Dates announced each year</p>
+                                            <p><i class="fas fa-map-marker-alt"></i> Retreat Centre</p>
+                                            <p>Our major annual event — a time of prayer, fellowship and renewal for the whole youth ministry.</p>
+                                            <a href="#" class="btn btn-sm event-register-btn" data-event="Yearly Youth Retreat">RSVP</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2391,10 +2424,10 @@
                     <div class="content-section">
                         <h2>Annual Events</h2>
                         <div class="card-grid">
-                            <div class="card"><div class="card-content"><h3>Summer Retreat</h3><p>Every June, we host a weekend retreat focused on spiritual growth and community building.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Mission Trip</h3><p>Each summer, our high school youth have the opportunity to serve on a domestic mission trip.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Fall Kickoff</h3><p>In September, we celebrate the start of the new school year with a special event.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Advent Series</h3><p>During Advent, we offer special programs to prepare for the coming of Christ.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Yearly Youth Retreat</h3><p>Our flagship annual event — a time set apart for spiritual growth, prayer and community building.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Nakuru Team Building Trip</h3><p>Held in late October, this trip helps us get back in touch with nature and enjoy a good vibe together.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Sunday Youth Meetings</h3><p>Every Sunday at St. Maurus Church, including Youth Choir rehearsals and ministry activities.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Choir &amp; Liturgy</h3><p>Throughout the year our choir and liturgist lead worship at youth Masses and special parish events.</p></div></div>
                         </div>
                     </div>
                 </div>
@@ -2405,7 +2438,7 @@
         <section id="ministries" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Ministries & Groups</h1>
+                    <h1>Ministries &amp; Groups</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2426,38 +2459,38 @@
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-music"></i></div>
                                 <h3>Youth Choir</h3>
-                                <p>Open to all youth who enjoy singing. Rehearsals Wednesdays at 6 PM. Sings at monthly youth Masses.</p>
-                                <p><strong>Contact:</strong> choir@saintmaurus.org</p>
+                                <p>Open to all youth who enjoy singing. The choir meets as part of our Sunday gathering at St. Maurus Church.</p>
+                                <p><strong>Contact:</strong> Vincent Kibe — 0112 818587 (WhatsApp)</p>
                             </div>
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-hands-helping"></i></div>
                                 <h3>Outreach Ministry</h3>
-                                <p>Service opportunities throughout the year. Monthly service projects and annual mission trip.</p>
-                                <p><strong>Contact:</strong> outreach@saintmaurus.org</p>
+                                <p>Service opportunities throughout the year, including community projects and the annual mission activities.</p>
+                                <p><strong>Contact:</strong> James Griffings, Organising Secretary</p>
                             </div>
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-pray"></i></div>
                                 <h3>Prayer Group</h3>
-                                <p>Meets weekly for prayer, reflection, and faith sharing. All are welcome regardless of prayer experience.</p>
-                                <p><strong>Contact:</strong> prayer@saintmaurus.org</p>
+                                <p>Meets for prayer, reflection and faith sharing. All are welcome regardless of prayer experience.</p>
+                                <p><strong>Contact:</strong> Stella, Liturgist — 0105 515253</p>
                             </div>
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-bible"></i></div>
                                 <h3>Bible Study</h3>
-                                <p>Various groups meeting at different times to study Scripture and apply it to daily life.</p>
-                                <p><strong>Contact:</strong> bible@saintmaurus.org</p>
+                                <p>Groups meeting to study Scripture and apply it to daily life as young Catholics.</p>
+                                <p><strong>Contact:</strong> Lorna Kadide, Secretary</p>
                             </div>
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-theater-masks"></i></div>
                                 <h3>Drama Ministry</h3>
-                                <p>Uses theater to explore faith topics and perform at parish events and retreats.</p>
-                                <p><strong>Contact:</strong> drama@saintmaurus.org</p>
+                                <p>Uses theatre to explore faith topics and perform at parish events and retreats.</p>
+                                <p><strong>Contact:</strong> Agnes Njeri, Treasurer</p>
                             </div>
                             <div class="ministry-card">
                                 <div class="ministry-icon"><i class="fas fa-users"></i></div>
                                 <h3>Small Groups</h3>
-                                <p>Gender and age-specific small groups for deeper relationship building and discipleship.</p>
-                                <p><strong>Contact:</strong> smallgroups@saintmaurus.org</p>
+                                <p>Age-specific small groups for deeper relationship building and discipleship.</p>
+                                <p><strong>Contact:</strong> Melchizedek Okodoi, Moderator</p>
                             </div>
                         </div>
                     </div>
@@ -2472,11 +2505,11 @@
                                             <tr><th>Ministry</th><th>Day</th><th>Time</th><th>Location</th></tr>
                                         </thead>
                                         <tbody>
-                                            <tr><td>Youth Choir</td><td>Wednesday</td><td>6:00 PM</td><td>Church</td></tr>
-                                            <tr><td>Bible Study (HS)</td><td>Tuesday</td><td>7:00 PM</td><td>Youth Room</td></tr>
-                                            <tr><td>Bible Study (MS)</td><td>Thursday</td><td>4:30 PM</td><td>Youth Room</td></tr>
-                                            <tr><td>Prayer Group</td><td>Monday</td><td>7:30 PM</td><td>Chapel</td></tr>
+                                            <tr><td>Youth Meeting</td><td>Sunday</td><td>As announced</td><td>St. Maurus Church</td></tr>
+                                            <tr><td>Youth Choir</td><td>Sunday</td><td>During youth meeting</td><td>St. Maurus Church</td></tr>
+                                            <tr><td>Prayer Group</td><td>Sunday</td><td>As announced</td><td>St. Maurus Church</td></tr>
                                             <tr><td>Outreach Ministry</td><td>Various</td><td>Various</td><td>Various</td></tr>
+                                            <tr><td>Small Groups</td><td>Various</td><td>Various</td><td>Various</td></tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -2489,7 +2522,7 @@
                         <h2>Join a Ministry</h2>
                         <div class="form-card">
                             <h3>Ministry Interest Form</h3>
-                            <p>Tell us which ministry you'd like to join, and our team will reach out with next steps.</p>
+                            <p>Tell us which ministry you'd like to join, and a leader will reach out via WhatsApp with next steps.</p>
                             <form class="js-demo-form" novalidate>
                                 <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! A ministry leader will be in touch soon.</div>
                                 <div class="form-grid">
@@ -2498,11 +2531,11 @@
                                         <input type="text" class="form-control" id="mi-name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="mi-email">Email Address <span class="req">*</span></label>
-                                        <input type="email" class="form-control" id="mi-email" required>
+                                        <label for="mi-email">Phone / Email <span class="req">*</span></label>
+                                        <input type="text" class="form-control" id="mi-email" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="mi-phone">Phone (optional)</label>
+                                        <label for="mi-phone">WhatsApp Number (optional)</label>
                                         <input type="tel" class="form-control" id="mi-phone">
                                     </div>
                                     <div class="form-group">
@@ -2551,8 +2584,8 @@
                         <div class="two-column">
                             <div>
                                 <h2>Join Our Community</h2>
-                                <p>There are many ways to get involved with Saint Maurus Youth Ministry. Whether you're looking to deepen your faith, make new friends, or serve others, we have opportunities for you.</p>
-                                <p>Our ministry is open to all youth in grades 6-12, regardless of where you are on your faith journey.</p>
+                                <p>There are many ways to get involved with St. Maurus Church Youth — Youth Serving Christ. Whether you're looking to deepen your faith, make new friends, or serve others, we have opportunities for you.</p>
+                                <p>Our ministry gathers every Sunday at St. Maurus Church in Mathare North, and all are welcome.</p>
                                 <a href="#contact" class="btn nav-link mt-20">Contact Us to Learn More</a>
                             </div>
                             <div><img src="images/download (33).jpeg" alt="Youth group activity" class="img-fluid" loading="lazy"></div>
@@ -2562,16 +2595,16 @@
                     <div class="content-section">
                         <h2>How to Get Started</h2>
                         <div class="card-grid">
-                            <div class="card"><div class="card-content"><h3>1. Attend an Event</h3><p>Come to one of our weekly gatherings or special events to see what we're all about.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>2. Meet Our Team</h3><p>Introduce yourself to our youth ministers and leadership team. We'd love to get to know you!</p></div></div>
+                            <div class="card"><div class="card-content"><h3>1. Attend a Sunday Meeting</h3><p>Come to one of our Sunday gatherings at St. Maurus Church to see what we're all about.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>2. Meet Our Team</h3><p>Introduce yourself to Melchizedek, Vincent, Lorna and the rest of the leadership team. We'd love to get to know you!</p></div></div>
                             <div class="card"><div class="card-content"><h3>3. Join a Ministry</h3><p>Find a ministry that matches your interests and gifts. You're welcome to try different ones!</p></div></div>
-                            <div class="card"><div class="card-content"><h3>4. Get Connected</h3><p>Sign up for our newsletter and join our social media groups to stay informed.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>4. Get Connected</h3><p>Ask a leader for a WhatsApp group invite so you never miss an update.</p></div></div>
                         </div>
                     </div>
 
                     <div class="content-section">
                         <h2>Volunteer Opportunities</h2>
-                        <p>We're always looking for adult volunteers to help with our youth ministry programs. Whether you can help occasionally or make a regular commitment, we have roles for you.</p>
+                        <p>We're always looking for volunteers to help with our youth ministry programs. Whether you can help occasionally or make a regular commitment, we have roles for you.</p>
                         <div class="belief-item"><h3>Small Group Leader</h3><p>Facilitate discussions and build relationships with a small group of youth.</p></div>
                         <div class="belief-item"><h3>Event Volunteer</h3><p>Help with setup, food, registration, or cleanup at our events.</p></div>
                         <div class="belief-item"><h3>Transportation Helper</h3><p>Provide rides to youth who need transportation to events.</p></div>
@@ -2583,7 +2616,7 @@
                         <h2>Volunteer Interest Form</h2>
                         <div class="form-card">
                             <h3>Become a Volunteer</h3>
-                            <p>Fill in your details below and select the areas you'd like to help with. Our youth minister will contact you.</p>
+                            <p>Fill in your details below and select the areas you'd like to help with. A leader will contact you via WhatsApp.</p>
                             <form class="js-demo-form" novalidate>
                                 <div class="form-success"><i class="fas fa-check-circle"></i> Thank you for volunteering! We'll be in touch shortly.</div>
                                 <div class="form-grid">
@@ -2592,11 +2625,11 @@
                                         <input type="text" class="form-control" id="vo-name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="vo-email">Email Address <span class="req">*</span></label>
-                                        <input type="email" class="form-control" id="vo-email" required>
+                                        <label for="vo-email">Phone / Email <span class="req">*</span></label>
+                                        <input type="text" class="form-control" id="vo-email" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="vo-phone">Phone Number <span class="req">*</span></label>
+                                        <label for="vo-phone">WhatsApp Number <span class="req">*</span></label>
                                         <input type="tel" class="form-control" id="vo-phone" required>
                                     </div>
                                     <div class="form-group">
@@ -2634,7 +2667,7 @@
         <section id="give" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Give & Donate</h1>
+                    <h1>Give &amp; Donate</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2649,16 +2682,16 @@
                         <div class="two-column">
                             <div>
                                 <h2>Support Our Youth Ministry</h2>
-                                <p>Your financial support enables us to provide transformative experiences for young people, including retreats, service projects, and faith formation programs.</p>
-                                <p>We are grateful for any contribution, whether one-time or recurring. All donations are tax-deductible.</p>
+                                <p>Your support enables us to provide transformative experiences for young people — including the Yearly Youth Retreat, the Nakuru Team Building Trip, and ongoing faith formation.</p>
+                                <p>All giving is handled directly by our Welfare Secretary. Every contribution, big or small, goes straight to the youth.</p>
                                 <div class="card mt-30">
                                     <div class="card-content">
                                         <h3>Ways to Give</h3>
                                         <ul>
-                                            <li>Online donation (see form)</li>
-                                            <li>Text-to-give: Text YOUTH to 555-555</li>
-                                            <li>Check payable to "Saint Maurus Youth Ministry"</li>
-                                            <li>Stock or planned giving</li>
+                                            <li><strong>M-Pesa / WhatsApp:</strong> Charity Chumba (Welfare Secretary) — <strong>0111 916127</strong></li>
+                                            <li>In person at any Sunday youth meeting</li>
+                                            <li>Bank transfer (details available from the Treasurer, Agnes Njeri)</li>
+                                            <li>In-kind / planned giving</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2666,20 +2699,20 @@
                             <div>
                                 <h3>Make a Donation</h3>
                                 <form class="js-demo-form" novalidate>
-                                    <div class="form-success"><i class="fas fa-check-circle"></i> Thank you for your generous donation!</div>
+                                    <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! Your pledge has been received — Charity will confirm with you on WhatsApp.</div>
                                     <div class="form-group">
                                         <label for="amount">Donation Amount</label>
                                         <select class="form-control" id="amount">
-                                            <option value="25">$25</option>
-                                            <option value="50">$50</option>
-                                            <option value="100">$100</option>
-                                            <option value="250">$250</option>
-                                            <option value="500">$500</option>
-                                            <option value="other">Other</option>
+                                            <option value="500">KSh 500</option>
+                                            <option value="1000">KSh 1,000</option>
+                                            <option value="2500">KSh 2,500</option>
+                                            <option value="5000">KSh 5,000</option>
+                                            <option value="10000">KSh 10,000</option>
+                                            <option value="other">Other amount</option>
                                         </select>
                                     </div>
                                     <div class="form-group" id="other-amount" style="display: none;">
-                                        <label for="custom-amount">Custom Amount</label>
+                                        <label for="custom-amount">Custom Amount (KSh)</label>
                                         <input type="number" class="form-control" id="custom-amount" placeholder="Enter amount">
                                     </div>
                                     <div class="form-group">
@@ -2692,6 +2725,7 @@
                                         </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100">Donate Now</button>
+                                    <p class="form-note"><i class="fas fa-phone"></i> Giving is handled by Charity Chumba (Welfare) on 0111 916127.</p>
                                 </form>
                             </div>
                         </div>
@@ -2700,10 +2734,10 @@
                     <div class="content-section">
                         <h2>Where Your Donation Goes</h2>
                         <div class="card-grid">
-                            <div class="card"><div class="card-content"><h3>Retreats & Events</h3><p>Helps subsidize costs so all youth can participate regardless of financial situation.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Service Projects</h3><p>Funds materials and transportation for local and domestic service opportunities.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Resources & Materials</h3><p>Provides Bibles, books, and other faith formation materials for our youth.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Leadership Development</h3><p>Supports training for our youth leaders and adult volunteers.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Retreats &amp; Events</h3><p>Helps subsidize costs so all youth can take part in the Yearly Retreat and Nakuru trip.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Service Projects</h3><p>Funds materials and transport for local outreach and service opportunities.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Resources &amp; Materials</h3><p>Provides Bibles, books, and other faith formation materials for our youth.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Welfare Support</h3><p>Supports members in need through the ministry's welfare fund.</p></div></div>
                         </div>
                     </div>
                 </div>
@@ -2729,30 +2763,28 @@
                         <div class="two-column">
                             <div>
                                 <h2>Get in Touch</h2>
-                                <p>We'd love to hear from you! Whether you have questions about our programs, want to get involved, or need pastoral care, don't hesitate to reach out.</p>
+                                <p>We'd love to hear from you! Whether you have questions about our programmes, want to get involved, or need pastoral care, don't hesitate to reach out. The fastest way to reach us is through a youth leader on WhatsApp.</p>
                                 <div class="contact-info mt-30">
                                     <h3>Contact Information</h3>
-                                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 2930 Mathare North, Area 3, Nairobi KE</p>
-                                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +254 793 826442</p>
-                                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> youth@saintmaurus.org</p>
-                                    <p><i class="far fa-clock"></i> <strong>Office Hours:</strong> Monday-Friday, 9am-5pm</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Mathare North Road, Nairobi, Kenya</p>
+                                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 0112 818587 (Vice Moderator / Secretary) &nbsp;|&nbsp; 0700 488222</p>
+                                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> Ask any youth leader for a group invite</p>
+                                    <p><i class="far fa-clock"></i> <strong>Meetings:</strong> Sundays at St. Maurus Church</p>
                                 </div>
                                 <div class="social-block">
                                     <h3>Follow Us</h3>
                                     <div class="social-links">
-                                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <h3>Send Us a Message</h3>
                                 <form class="js-demo-form" novalidate>
-                                    <div class="form-success"><i class="fas fa-check-circle"></i> Message sent! We'll get back to you soon.</div>
+                                    <div class="form-success"><i class="fas fa-check-circle"></i> Message sent! A leader will get back to you soon.</div>
                                     <div class="form-group"><label for="name">Your Name <span class="req">*</span></label><input type="text" class="form-control" id="name" required></div>
-                                    <div class="form-group"><label for="email">Email Address <span class="req">*</span></label><input type="email" class="form-control" id="email" required></div>
+                                    <div class="form-group"><label for="email">Phone / Email <span class="req">*</span></label><input type="text" class="form-control" id="email" required></div>
                                     <div class="form-group">
                                         <label for="subject">Subject</label>
                                         <select class="form-control" id="subject">
@@ -2765,6 +2797,7 @@
                                     </div>
                                     <div class="form-group"><label for="message">Message <span class="req">*</span></label><textarea class="form-control" id="message" rows="5" required></textarea></div>
                                     <button type="submit" class="btn btn-primary">Send Message</button>
+                                    <p class="form-note"><i class="fab fa-whatsapp"></i> Prefer WhatsApp? Message any youth leader for the fastest response.</p>
                                 </form>
                             </div>
                         </div>
@@ -2776,15 +2809,15 @@
                             <div class="card-content">
                                 <div class="two-column">
                                     <div>
-                                        <h3>Location & Directions</h3>
-                                        <p>Saint Maurus Catholic Church is located in the heart of Mathare North, easily accessible from major highways i.e Thika Road, Juja Road and Outerring Road.</p>
+                                        <h3>Location &amp; Directions</h3>
+                                        <p>St. Maurus Church is located on Mathare North Road, Nairobi, easily accessible from the major highways — Thika Road, Juja Road and Outer Ring Road.</p>
                                         <p><strong>Parking:</strong> Free parking is available in the church lot. Additional parking is available on the street.</p>
-                                        <p><strong>Public Transportation:</strong> The church is served by bus routes 12, 15, and 22.</p>
+                                        <p><strong>Public Transportation:</strong> The church is served by matatu routes along Mathare North Road.</p>
                                     </div>
                                     <div>
                                         <div class="map-embed">
                                             <iframe src="https://www.google.com/maps?q=Mathare+North,+Nairobi,+Kenya&z=15&output=embed"
-                                                title="Map showing the location of Saint Maurus Catholic Church, Mathare North, Nairobi"
+                                                title="Map showing the location of St. Maurus Church, Mathare North, Nairobi"
                                                 loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
                                         </div>
                                     </div>
@@ -2800,7 +2833,7 @@
         <section id="blog" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Blog & Devotionals</h1>
+                    <h1>Blog &amp; Devotionals</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2815,8 +2848,8 @@
                         <h2>Latest Posts</h2>
                         <div class="blog-post">
                             <div class="blog-meta">
-                                <span><i class="far fa-calendar"></i> June 10, 2024</span> |
-                                <span><i class="far fa-user"></i> Steph London</span> |
+                                <span><i class="far fa-calendar"></i> June 10, 2025</span> |
+                                <span><i class="far fa-user"></i> Melchizedek Okodoi</span> |
                                 <span><i class="far fa-folder"></i> Devotional</span>
                             </div>
                             <div class="blog-content">
@@ -2827,8 +2860,8 @@
                         </div>
                         <div class="blog-post">
                             <div class="blog-meta">
-                                <span><i class="far fa-calendar"></i> June 3, 2024</span> |
-                                <span><i class="far fa-user"></i> Leasly Maithya</span> |
+                                <span><i class="far fa-calendar"></i> June 3, 2025</span> |
+                                <span><i class="far fa-user"></i> Lorna Kadide</span> |
                                 <span><i class="far fa-folder"></i> Reflection</span>
                             </div>
                             <div class="blog-content">
@@ -2839,8 +2872,8 @@
                         </div>
                         <div class="blog-post">
                             <div class="blog-meta">
-                                <span><i class="far fa-calendar"></i> May 27, 2024</span> |
-                                <span><i class="far fa-user"></i> Beatrice Wambui</span> |
+                                <span><i class="far fa-calendar"></i> May 27, 2025</span> |
+                                <span><i class="far fa-user"></i> Agnes Njeri</span> |
                                 <span><i class="far fa-folder"></i> Testimony</span>
                             </div>
                             <div class="blog-content">
@@ -2871,21 +2904,22 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Submit a Prayer Request</h2>
-                        <p>Our community is committed to praying for one another. Share your prayer requests below, and our youth ministry team will lift them up in prayer.</p>
+                        <p>Our community is committed to praying for one another. Share your prayer requests below, or send them directly to our Liturgist, <strong>Stella — 0105 515253</strong>.</p>
                         <form class="js-demo-form" novalidate>
                             <div class="form-success"><i class="fas fa-check-circle"></i> Your prayer request has been received. We are praying with you.</div>
                             <div class="form-group"><label for="prayer-name">Your Name (optional)</label><input type="text" class="form-control" id="prayer-name"></div>
                             <div class="form-group"><label for="prayer-request">Prayer Request <span class="req">*</span></label><textarea class="form-control" id="prayer-request" rows="5" required></textarea></div>
                             <div class="form-group"><label><input type="checkbox"> Share anonymously (your name will not be displayed)</label></div>
                             <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+                            <p class="form-note"><i class="fas fa-phone"></i> Prayer requests are routed directly to Stella, our Liturgist (0105 515253).</p>
                         </form>
                     </div>
                     <div class="content-section">
                         <h2>Community Prayers</h2>
                         <p>Join us in praying for these intentions from our community:</p>
-                        <div class="card"><div class="card-content"><h3>For Healing</h3><p><em>Submitted anonymously on June 12, 2024</em></p><p>Please pray for my grandmother who is undergoing surgery this week. May God guide the doctors' hands and bring her complete healing.</p></div></div>
-                        <div class="card"><div class="card-content"><h3>For Guidance</h3><p><em>Submitted by Marcus on June 10, 2024</em></p><p>I'm trying to decide which college to attend next year. Please pray that I discern God's will for my future.</p></div></div>
-                        <div class="card"><div class="card-content"><h3>For Peace</h3><p><em>Submitted anonymously on June 8, 2024</em></p><p>My family is going through a difficult time. Please pray for peace and reconciliation in our home.</p></div></div>
+                        <div class="card"><div class="card-content"><h3>For Healing</h3><p><em>Submitted anonymously</em></p><p>Please pray for my grandmother who is undergoing surgery this week. May God guide the doctors' hands and bring her complete healing.</p></div></div>
+                        <div class="card"><div class="card-content"><h3>For Guidance</h3><p><em>Submitted by Marcus</em></p><p>I'm trying to decide which college to attend next year. Please pray that I discern God's will for my future.</p></div></div>
+                        <div class="card"><div class="card-content"><h3>For Peace</h3><p><em>Submitted anonymously</em></p><p>My family is going through a difficult time. Please pray for peace and reconciliation in our home.</p></div></div>
                     </div>
                 </div>
             </div>
@@ -2895,7 +2929,7 @@
         <section id="testimonials" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Testimonials & Stories</h1>
+                    <h1>Testimonials &amp; Stories</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2908,7 +2942,7 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Stories of Faith</h2>
-                        <p>Hear from youth and families about how Saint Maurus Youth Ministry has impacted their lives.</p>
+                        <p>Hear from youth members about how St. Maurus Church Youth — Youth Serving Christ — has impacted their lives.</p>
                         <div class="card-grid">
                             <div class="card"><div class="card-content">
                                 <div class="testimonial-head">
@@ -2922,21 +2956,21 @@
                                     <img src="images/t545.jpg" alt="Marcus Johnson" class="avatar" loading="lazy">
                                     <div><h3>Marcus Johnson</h3><p style="color: var(--text-muted); font-size: 0.9rem;">College Freshman</p></div>
                                 </div>
-                                <p>"Serving in the outreach ministry has opened my eyes to the needs in our community. It's rewarding to put our faith into action and help others. The mission trip last summer was life-changing - we served at a homeless shelter and I realized how blessed I am and how much difference we can make when we work together."</p>
+                                <p>"Serving in the outreach ministry has opened my eyes to the needs in our community. It's rewarding to put our faith into action and help others. The Nakuru trip last year was life-changing — I realised how blessed I am and how much difference we can make when we work together."</p>
                             </div></div>
                             <div class="card"><div class="card-content">
                                 <div class="testimonial-head">
                                     <img src="images/12321.jpg" alt="Sophia Chen" class="avatar" loading="lazy">
                                     <div><h3>Sophia Chen</h3><p style="color: var(--text-muted); font-size: 0.9rem;">High School Junior</p></div>
                                 </div>
-                                <p>"I was nervous about joining at first, but everyone was so welcoming. The Bible study group has helped me understand Scripture in a whole new way. I used to see the Bible as just stories, but now I see how relevant it is to my daily life. The discussions we have help me apply my faith to real situations I face at school."</p>
+                                <p>"I was nervous about joining at first, but everyone was so welcoming. The Bible study group has helped me understand Scripture in a whole new way. I used to see the Bible as just stories, but now I see how relevant it is to my daily life."</p>
                             </div></div>
                             <div class="card"><div class="card-content">
                                 <div class="testimonial-head">
                                     <img src="images/download (2).jpg" alt="Super Omosh" class="avatar" loading="lazy">
                                     <div><h3>Super Omosh</h3><p style="color: var(--text-muted); font-size: 0.9rem;">High School Sophomore</p></div>
                                 </div>
-                                <p>"Being part of the youth choir has been an incredible experience. I've always loved music, but now I understand it as a form of prayer. Leading worship at our youth Masses has deepened my appreciation for the liturgy and helped me feel more connected to the Church."</p>
+                                <p>"Being part of the youth choir has been an incredible experience. I've always loved music, but now I understand it as a form of prayer. Leading worship at our youth Masses has deepened my appreciation for the liturgy."</p>
                             </div></div>
                         </div>
                     </div>
@@ -2948,7 +2982,7 @@
         <section id="gallery" class="page hidden">
             <div class="page-header">
                 <div class="container">
-                    <h1>Photo & Video Gallery</h1>
+                    <h1>Photo &amp; Video Gallery</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#home" class="nav-link">Home</a></li>
@@ -2961,6 +2995,7 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Memories from Our Events</h2>
+                        <p>Photos are sourced directly from our Instagram (<strong>@st_maurus_ysc</strong>) and TikTok (<strong>@st.maurus.youth.s</strong>) accounts.</p>
                         <div class="gallery-grid">
                             <div class="gallery-item"><img src="images/Youth_hangouts.jpg" alt="Youth group gathering" loading="lazy"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
                             <div class="gallery-item"><img src="images/download (33).jpeg" alt="Service project" loading="lazy"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
@@ -2975,11 +3010,11 @@
                         <div class="card-grid">
                             <div class="card">
                                 <div class="card-img"><img src="images/313231.jpg" alt="Video thumbnail" loading="lazy"></div>
-                                <div class="card-content"><h3>Summer Retreat 2024 Highlights</h3><p>Watch the amazing moments from our annual summer retreat.</p><a href="#" class="btn btn-sm">Watch Video</a></div>
+                                <div class="card-content"><h3>Nakuru Team Building Highlights</h3><p>Watch the amazing moments from our trip to Nakuru.</p><a href="#" class="btn btn-sm">Watch Video</a></div>
                             </div>
                             <div class="card">
                                 <div class="card-img"><img src="images/download (2).jpg" alt="Video thumbnail" loading="lazy"></div>
-                                <div class="card-content"><h3>Mission Trip Documentary</h3><p>Follow our journey serving communities in need.</p><a href="#" class="btn btn-sm">Watch Video</a></div>
+                                <div class="card-content"><h3>Yearly Youth Retreat</h3><p>Follow our journey through the annual youth retreat.</p><a href="#" class="btn btn-sm">Watch Video</a></div>
                             </div>
                             <div class="card">
                                 <div class="card-img"><img src="images/kareeen-402.jpg" alt="Video thumbnail" loading="lazy"></div>
@@ -3007,13 +3042,13 @@
             <div class="page-content">
                 <div class="container">
                     <div class="content-section">
-                        <h2>Welcome to Saint Maurus Youth Ministry!</h2>
-                        <p>We're excited that you're considering joining our community. Here's what you need to know as a newcomer.</p>
+                        <h2>Welcome to St. Maurus Church Youth!</h2>
+                        <p>We're excited that you're considering joining our community — <em>Youth Serving Christ</em>. Here's what you need to know as a newcomer.</p>
                         <div class="card-grid">
-                            <div class="card"><div class="card-content"><h3>What to Expect</h3><p>Our youth gatherings are welcoming, engaging, and focused on helping you grow in your relationship with God. You'll find a mix of games, small group discussions, a teaching relevant to teen life, prayer, and often some snacks! We create a welcoming environment where you can be yourself and grow in faith.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>When We Meet</h3><p><strong>High School:</strong> Sundays, 6:30-8:00 PM</p><p><strong>Middle School:</strong> Wednesdays, 4:30-6:00 PM</p><p><strong>Youth Mass:</strong> First Sunday of each month, 5:00 PM</p></div></div>
+                            <div class="card"><div class="card-content"><h3>What to Expect</h3><p>Our youth gatherings are welcoming, engaging, and focused on helping you grow in your relationship with God. You'll find a mix of games, discussions, a teaching relevant to teen life, prayer, and often some snacks! We create a welcoming environment where you can be yourself and grow in faith.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>When We Meet</h3><p><strong>Youth Meetings:</strong> Sundays at St. Maurus Church</p><p><strong>Youth Choir:</strong> Meets as part of the Sunday gathering</p><p><strong>Address:</strong> Mathare North Road, Nairobi</p></div></div>
                             <div class="card"><div class="card-content"><h3>What to Bring</h3><p>Just bring yourself! We provide all materials. If you have a Bible, feel free to bring it, but we have extras if you don't. Wear comfortable clothes as we often have active games and activities.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>Frequently Asked Questions</h3><p><strong>Do I need to be Catholic to attend?</strong> No, all are welcome regardless of religious background.</p><p><strong>Is there a cost?</strong> Most events are free, though some special events may have a small fee.</p><p><strong>Do my parents need to stay?</strong> No, but they're welcome to join our parent ministry meetings.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>Frequently Asked Questions</h3><p><strong>Do I need to be Catholic to attend?</strong> No, all are welcome regardless of religious background.</p><p><strong>Is there a cost?</strong> Most gatherings are free, though some special trips may have a small fee.</p><p><strong>How do I join?</strong> Ask any youth leader for a WhatsApp group invite.</p></div></div>
                         </div>
                     </div>
                     <div class="content-section">
@@ -3023,10 +3058,10 @@
                                 <h3>Get Connected</h3>
                                 <p>Ready to take the next step? Here's how you can get involved:</p>
                                 <ol>
-                                    <li><strong>Attend an event:</strong> Come to one of our weekly gatherings to see what we're about.</li>
-                                    <li><strong>Meet our team:</strong> Introduce yourself to our youth ministers and leadership team.</li>
+                                    <li><strong>Attend a Sunday meeting:</strong> Come to St. Maurus Church and see what we're about.</li>
+                                    <li><strong>Meet our team:</strong> Introduce yourself to Melchizedek, Vincent, Lorna and the leadership team.</li>
                                     <li><strong>Join a small group:</strong> Connect with peers for deeper discussion and friendship.</li>
-                                    <li><strong>Get on our list:</strong> Sign up for our newsletter to stay informed about events.</li>
+                                    <li><strong>Join the WhatsApp group:</strong> Ask a leader for an invite to stay informed about events.</li>
                                 </ol>
                                 <a href="#get-involved" class="btn nav-link mt-20">Get Involved Today</a>
                             </div>
@@ -3041,7 +3076,7 @@
                             <h3>Let Us Know You're Coming</h3>
                             <p>Fill this out before your first visit so we can welcome you personally and connect you with a small group.</p>
                             <form class="js-demo-form" novalidate>
-                                <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! We can't wait to meet you. Check your email for details.</div>
+                                <div class="form-success"><i class="fas fa-check-circle"></i> Thank you! We can't wait to meet you. A leader will reach out on WhatsApp.</div>
                                 <div class="form-grid">
                                     <div class="form-group">
                                         <label for="nh-name">Youth's Name <span class="req">*</span></label>
@@ -3069,16 +3104,16 @@
                                         <input type="tel" class="form-control" id="nh-phone" required>
                                     </div>
                                     <div class="form-group full">
-                                        <label for="nh-email">Email Address <span class="req">*</span></label>
-                                        <input type="email" class="form-control" id="nh-email" required>
+                                        <label for="nh-email">Phone / Email <span class="req">*</span></label>
+                                        <input type="text" class="form-control" id="nh-email" required>
                                     </div>
                                     <div class="form-group full">
                                         <label for="nh-hear">How did you hear about us?</label>
                                         <select class="form-control" id="nh-hear">
                                             <option>Friend or family member</option>
-                                            <option>Social media</option>
-                                            <option>Church bulletin</option>
-                                            <option>Parish event</option>
+                                            <option>Instagram (@st_maurus_ysc)</option>
+                                            <option>TikTok (@st.maurus.youth.s)</option>
+                                            <option>Church announcement</option>
                                             <option>Other</option>
                                         </select>
                                     </div>
@@ -3160,11 +3195,11 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Common Questions</h2>
-                        <div class="faq-item"><div class="faq-question"><span>Who can participate in youth ministry?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Our youth ministry is open to all young people in grades 6-12. You don't need to be a member of Saint Maurus parish to participate - all are welcome!</p></div></div>
-                        <div class="faq-item"><div class="faq-question"><span>What should I expect at a typical youth night?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>A typical youth night includes icebreaker games, small group discussions, a teaching relevant to teen life, prayer, and often some snacks! We create a welcoming environment where you can be yourself and grow in faith.</p></div></div>
-                        <div class="faq-item"><div class="faq-question"><span>Is there a cost to participate?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Most of our regular programming is free. Some special events like retreats or mission trips may have a cost, but we never want finances to be a barrier. Scholarships are available for those who need them.</p></div></div>
+                        <div class="faq-item"><div class="faq-question"><span>Who can participate in youth ministry?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Our youth ministry is open to all young people. You don't need to be a member of St. Maurus parish to participate — all are welcome!</p></div></div>
+                        <div class="faq-item"><div class="faq-question"><span>What should I expect at a typical youth meeting?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>A typical meeting includes icebreaker games, discussions, a teaching relevant to teen life, prayer, and often some snacks! We create a welcoming environment where you can be yourself and grow in faith.</p></div></div>
+                        <div class="faq-item"><div class="faq-question"><span>Is there a cost to participate?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Most of our regular gatherings are free. Some special events like the Yearly Retreat or the Nakuru Team Building Trip may have a cost, but we never want finances to be a barrier. Support is available through our Welfare Secretary.</p></div></div>
                         <div class="faq-item"><div class="faq-question"><span>Do I need to bring anything?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Just bring yourself! We provide all materials. If you have a Bible, you're welcome to bring it, but it's not required. Wear comfortable clothes as we often have active games.</p></div></div>
-                        <div class="faq-item"><div class="faq-question"><span>How can my parents get involved?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>We have a parent ministry that meets monthly and parents are always welcome to volunteer as chaperones, small group leaders, or help with events. Contact our youth minister to learn more about parent involvement opportunities.</p></div></div>
+                        <div class="faq-item"><div class="faq-question"><span>How do I stay updated about events?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Communication is handled through our WhatsApp group. Ask any youth leader for an invite, and follow us on Instagram (@st_maurus_ysc) and TikTok (@st.maurus.youth.s).</p></div></div>
                         <div class="faq-item"><div class="faq-question"><span>What if I'm not Catholic?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>You are absolutely welcome! Our youth ministry is open to everyone regardless of religious background. We'll share our Catholic faith with you, but there's no pressure to become Catholic. Come as you are!</p></div></div>
                     </div>
                     <div class="content-section">
@@ -3194,13 +3229,13 @@
                     <div class="content-section">
                         <h2>Our Commitment to Privacy</h2>
                         <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
-                        <div class="belief-item"><h3>Information We Collect</h3><p>We collect information that you voluntarily provide to us, such as when you register for events, sign up for our newsletter, or submit prayer requests. This may include your name, email address, phone number, and other contact information.</p></div>
+                        <div class="belief-item"><h3>Information We Collect</h3><p>We collect information that you voluntarily provide to us, such as when you sign up for events or join our WhatsApp group. This may include your name, phone number, and other contact information.</p></div>
                         <div class="belief-item"><h3>How We Use Your Information</h3><p>We use your information to communicate with you about youth ministry activities, provide pastoral care, and improve our programs. We do not sell or rent your personal information to third parties.</p></div>
                         <div class="belief-item"><h3>Information Security</h3><p>We take reasonable precautions to protect your information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p></div>
                         <div class="belief-item"><h3>Cookies and Tracking</h3><p>Our website may use cookies to enhance your browsing experience. These cookies do not contain personally identifiable information.</p></div>
-                        <div class="belief-item"><h3>Your Choices</h3><p>You may opt out of receiving communications from us at any time by contacting us or using the unsubscribe link in our emails.</p></div>
+                        <div class="belief-item"><h3>Your Choices</h3><p>You may opt out of receiving communications from us at any time by contacting any youth leader or leaving the WhatsApp group.</p></div>
                         <div class="belief-item"><h3>Changes to This Policy</h3><p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p></div>
-                        <div class="belief-item"><h3>Contact Us</h3><p>If you have any questions about this privacy policy, please contact us at youth@saintmaurus.org.</p></div>
+                        <div class="belief-item"><h3>Contact Us</h3><p>If you have any questions about this privacy policy, please contact Vincent Kibe (Vice Moderator / Secretary) on 0112 818587.</p></div>
                     </div>
                 </div>
             </div>
@@ -3226,10 +3261,10 @@
                         <p>By accessing and using this website, you accept and agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use our website.</p>
                         <div class="belief-item"><h3>Use of Content</h3><p>All content on this website is for informational and ministry purposes. You may not reproduce, distribute, or modify our content without prior written permission.</p></div>
                         <div class="belief-item"><h3>User Conduct</h3><p>You agree to use this website in a respectful and lawful manner. Any misuse, including submitting false information or inappropriate content, is prohibited.</p></div>
-                        <div class="belief-item"><h3>External Links</h3><p>Our website may contain links to external sites. We are not responsible for the content or privacy practices of those sites.</p></div>
-                        <div class="belief-item"><h3>Limitation of Liability</h3><p>Saint Maurus Catholic Church Youth Ministry is not liable for any damages arising from the use of this website.</p></div>
+                        <div class="belief-item"><h3>External Links</h3><p>Our website may contain links to external sites (including Instagram and TikTok). We are not responsible for the content or privacy practices of those sites.</p></div>
+                        <div class="belief-item"><h3>Limitation of Liability</h3><p>St. Maurus Church Youth — Youth Serving Christ — is not liable for any damages arising from the use of this website.</p></div>
                         <div class="belief-item"><h3>Changes to Terms</h3><p>We may revise these Terms of Use at any time. Continued use of the website after changes constitutes acceptance of the new terms.</p></div>
-                        <div class="belief-item"><h3>Contact</h3><p>Questions about these terms may be directed to youth@saintmaurus.org.</p></div>
+                        <div class="belief-item"><h3>Contact</h3><p>Questions about these terms may be directed to Vincent Kibe on 0112 818587.</p></div>
                     </div>
                 </div>
             </div>
@@ -3242,19 +3277,17 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>About Us</h3>
-                    <p>The Saint Maurus Catholic Church Youth Ministry is dedicated to helping young people grow in their Catholic faith through prayer, service, and community.</p>
+                    <p>St. Maurus Church Youth — <strong>Youth Serving Christ</strong> — is dedicated to helping young people grow in their Catholic faith through prayer, service, and community. <em>Connected in Faith, Driven by Love, United in Christ.</em></p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
                     <!-- Newsletter form -->
                     <form class="footer-newsletter js-newsletter-form" novalidate>
-                        <input type="email" name="newsletter-email" placeholder="Your email for updates" aria-label="Email for newsletter" required>
+                        <input type="text" name="newsletter-contact" placeholder="Phone or email for updates" aria-label="Contact for newsletter" required>
                         <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
                     </form>
-                    <p class="footer-newsletter-msg js-newsletter-msg">✓ Thanks! You're on the list.</p>
+                    <p class="footer-newsletter-msg js-newsletter-msg">✓ Thanks! A leader will add you to the WhatsApp group.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
@@ -3270,17 +3303,17 @@
                 <div class="footer-column">
                     <h3>Contact Info</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 2930 Mathare, Nairobi Town, Kenya</li>
-                        <li><i class="fas fa-phone"></i> +254 793 826442</li>
-                        <li><i class="fas fa-envelope"></i> youth@saintmaurus.org</li>
-                        <li><i class="far fa-clock"></i> Office Hours: Mon-Fri 9am-5pm</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mathare North Road, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> 0112 818587 | 0700 488222</li>
+                        <li><i class="fab fa-whatsapp"></i> Join via WhatsApp group invite</li>
+                        <li><i class="fas fa-clock"></i> Meetings: Sundays at St. Maurus Church</li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Additional Resources</h3>
                     <ul>
                         <li><a href="#prayer" class="nav-link">Prayer Requests</a></li>
-                        <li><a href="#blog" class="nav-link">Blog & Devotionals</a></li>
+                        <li><a href="#blog" class="nav-link">Blog &amp; Devotionals</a></li>
                         <li><a href="#gallery" class="nav-link">Photo Gallery</a></li>
                         <li><a href="#resources" class="nav-link">Faith Resources</a></li>
                         <li><a href="#new-here" class="nav-link">New Here?</a></li>
@@ -3289,7 +3322,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Saint Maurus Catholic Church Youth Ministry. All Rights Reserved. |
+                <p>&copy; 2025 St. Maurus Church Youth — Youth Serving Christ. All Rights Reserved. | stmaurusyouth.co.ke |
                 <a href="#privacy" class="nav-link">Privacy Policy</a> |
                 <a href="#terms" class="nav-link">Terms of Use</a></p>
                 <p>Designed by Alexander N. Kathanzu</p>
@@ -3313,7 +3346,7 @@
             </div>
             <div class="modal-body">
                 <form class="js-demo-form" id="eventForm" novalidate>
-                    <div class="form-success"><i class="fas fa-check-circle"></i> You're registered! A confirmation will be sent to your email.</div>
+                    <div class="form-success"><i class="fas fa-check-circle"></i> You're registered! A leader will confirm with you on WhatsApp.</div>
                     <input type="hidden" id="event-name" name="event-name">
                     <div class="form-grid">
                         <div class="form-group">
@@ -3321,11 +3354,11 @@
                             <input type="text" class="form-control" id="reg-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="reg-email">Email Address <span class="req">*</span></label>
-                            <input type="email" class="form-control" id="reg-email" required>
+                            <label for="reg-email">Phone / Email <span class="req">*</span></label>
+                            <input type="text" class="form-control" id="reg-email" required>
                         </div>
                         <div class="form-group">
-                            <label for="reg-phone">Phone Number <span class="req">*</span></label>
+                            <label for="reg-phone">WhatsApp Number <span class="req">*</span></label>
                             <input type="tel" class="form-control" id="reg-phone" required>
                         </div>
                         <div class="form-group">
@@ -3498,7 +3531,7 @@
         document.querySelectorAll('form.js-newsletter-form').forEach(form => {
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
-                const input = form.querySelector('input[type="email"]');
+                const input = form.querySelector('input[name="newsletter-contact"]');
                 if (!input || !input.checkValidity()) {
                     if (input) input.reportValidity();
                     return;
@@ -3585,8 +3618,8 @@
                     events[`${y}-${pad(m + 1)}-${pad(d)}`] = label;
                 }
 
-                addEvent(todayYear, todayMonth, 5, 'Bible Study Session');
-                addEvent(todayYear, todayMonth, 12, 'Youth Movie Night');
+                addEvent(todayYear, todayMonth, 5, 'Youth Meeting');
+                addEvent(todayYear, todayMonth, 12, 'Choir Rehearsal');
                 addEvent(todayYear, todayMonth, 18, 'Outreach Project');
                 addEvent(todayYear, todayMonth, 25, 'Youth Mass & Social');
 
