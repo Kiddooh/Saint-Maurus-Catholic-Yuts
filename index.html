@@ -254,6 +254,41 @@
         }
         .header-top .social-links a:hover { background: var(--grad-gold); color: #fff; transform: translateY(-3px); }
 
+        /* WhatsApp group link inside the top strip */
+        .header-top .social-links a.wa-group {
+            width: auto;
+            height: 30px;
+            padding: 0 12px 0 10px;
+            gap: 7px;
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            font-size: .78rem;
+            letter-spacing: .01em;
+            background: rgba(52, 168, 83, .28);
+            border-color: rgba(255, 255, 255, .32);
+        }
+        .header-top .social-links a.wa-group i { font-size: .95rem; }
+        .header-top .social-links a.wa-group:hover {
+            background: var(--grad-gold);
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(15, 122, 61, .45);
+        }
+        @media (max-width: 400px) {
+            .header-top .social-links a.wa-group span { display: none; }
+            .header-top .social-links a.wa-group { padding: 0; width: 30px; justify-content: center; }
+        }
+
+        .header-top .contact-info a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color var(--t), opacity var(--t);
+        }
+        .header-top .contact-info a:hover { color: #c9f2d8; }
+
         .header-main {
             display: flex;
             flex-wrap: wrap;
@@ -1773,9 +1808,13 @@
                 <div class="header-top-content">
                     <div class="contact-info">
                         <i class="fas fa-phone"></i> 0112 818587 &nbsp; | &nbsp; 0700 488222 &nbsp; | &nbsp;
-                        <i class="fab fa-whatsapp"></i> Join our WhatsApp group
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener">Join our WhatsApp group</a>
                     </div>
                     <div class="social-links">
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="wa-group" aria-label="Join our WhatsApp group" title="Join our WhatsApp Group">
+                            <i class="fab fa-whatsapp"></i><span>WhatsApp Group</span>
+                        </a>
                         <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
@@ -2271,8 +2310,8 @@
                             <div class="card">
                                 <div class="card-content">
                                     <h3><i class="fab fa-whatsapp" style="color: var(--secondary); margin-right: 8px;"></i> WhatsApp</h3>
-                                    <p>All ministry communication happens through our WhatsApp groups. Ask any youth leader to add you in.</p>
-                                    <a href="#contact" class="btn btn-sm nav-link">Get the Invite</a>
+                                    <p>All ministry communication happens through our WhatsApp group. Tap below to join instantly.</p>
+                                    <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-whatsapp"></i> Join the Group</a>
                                 </div>
                             </div>
                         </div>
@@ -2378,7 +2417,8 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Our Ministry Offerings</h2>
-                        <p>We offer a variety of ministries to help youth grow in faith according to their interests and gifts. To join any of them, simply speak to a youth leader or ask to be added to the ministry WhatsApp group.</p>
+                        <p>We offer a variety of ministries to help youth grow in faith according to their interests and gifts. To join any of them, simply speak to a youth leader or join our WhatsApp group.</p>
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn mt-20"><i class="fab fa-whatsapp"></i> Join the WhatsApp Group</a>
                     </div>
 
                     <div class="content-section">
@@ -2514,7 +2554,8 @@
                                 <h2>Join Our Community</h2>
                                 <p>There are many ways to get involved with the St. Maurus Church Youth Ministry. Whether you're looking to deepen your faith, make new friends, or serve others, we have a place for you.</p>
                                 <p>Our ministry is open to all young people of the parish and beyond &mdash; come as you are.</p>
-                                <a href="#contact" class="btn nav-link mt-20">Contact Us to Learn More</a>
+                                <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn mt-20"><i class="fab fa-whatsapp"></i> Join Our WhatsApp Group</a>
+                                <a href="#contact" class="btn btn-primary mt-20 nav-link">Contact Us to Learn More</a>
                             </div>
                             <div><img src="images/download (33).jpeg" alt="Youth group activity" class="img-fluid" loading="lazy"></div>
                         </div>
@@ -2526,7 +2567,7 @@
                             <div class="card"><div class="card-content"><h3>1. Come to a Sunday Meeting</h3><p>Join us any Sunday at St. Maurus Church and see what we're all about.</p></div></div>
                             <div class="card"><div class="card-content"><h3>2. Meet Our Leaders</h3><p>Introduce yourself to our leadership team &mdash; we'd love to get to know you.</p></div></div>
                             <div class="card"><div class="card-content"><h3>3. Join a Ministry</h3><p>Find a ministry that matches your interests and gifts. You're welcome to try different ones!</p></div></div>
-                            <div class="card"><div class="card-content"><h3>4. Get Connected</h3><p>Ask a youth leader to add you to our WhatsApp group so you never miss an update.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>4. Get Connected</h3><p>Join our WhatsApp group so you never miss an update.</p><a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-whatsapp"></i> Join Group</a></div></div>
                         </div>
                     </div>
 
@@ -2663,7 +2704,7 @@
                                     <h3>Contact Information</h3>
                                     <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Mathare North Road, Nairobi, Kenya</p>
                                     <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 0112 818587 &nbsp;|&nbsp; 0700 488222</p>
-                                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> Join our group via a youth leader</p>
+                                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener">Join our group</a></p>
                                     <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> @st_maurus_ysc</p>
                                     <p><i class="fab fa-tiktok"></i> <strong>TikTok:</strong> @st.maurus.youth.s</p>
                                     <p><i class="far fa-clock"></i> <strong>Meetings:</strong> Sundays at St. Maurus Church</p>
@@ -2671,6 +2712,7 @@
                                 <div class="social-block">
                                     <h3>Follow Us</h3>
                                     <div class="social-links">
+                                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" aria-label="Join our WhatsApp group" title="Join our WhatsApp Group"><i class="fab fa-whatsapp"></i></a>
                                         <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                                     </div>
@@ -2678,7 +2720,7 @@
                             </div>
                             <div>
                                 <h3>Reach Us on WhatsApp</h3>
-                                <p>We don't use website contact forms. All communication is handled through <strong>WhatsApp group invites provided by our youth leaders</strong> &mdash; simply reach out to any of the numbers below and we'll add you in.</p>
+                                <p>All communication is handled through our <strong>WhatsApp group</strong> &mdash; join instantly with the button below, or reach out to any of the numbers listed.</p>
                                 <div class="card">
                                     <div class="card-content">
                                         <h3>Youth Leader Contacts</h3>
@@ -2688,7 +2730,8 @@
                                             <li><strong>Welfare &amp; Donations:</strong> Charity Chumba &mdash; 0111 916127</li>
                                             <li><strong>Prayer Requests:</strong> Stella (Liturgist) &mdash; 0105 515253</li>
                                         </ul>
-                                        <a href="https://wa.me/254112818587" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Message Us on WhatsApp</a>
+                                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Join the WhatsApp Group</a>
+                                        <a href="https://wa.me/254112818587" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Message Us Directly</a>
                                     </div>
                                 </div>
                             </div>
@@ -2883,7 +2926,7 @@
                         <p>We're excited that you're considering joining our community. Here's what you need to know as a newcomer.</p>
                         <div class="card-grid">
                             <div class="card"><div class="card-content"><h3>What to Expect</h3><p>Our youth gatherings are welcoming, engaging and focused on helping you grow in your relationship with God. You'll find a mix of fellowship, teaching relevant to young life, prayer, music and often some snacks! We create a welcoming environment where you can be yourself and grow in faith.</p></div></div>
-                            <div class="card"><div class="card-content"><h3>When We Meet</h3><p><strong>Youth Meeting &amp; Choir:</strong> Sundays at St. Maurus Church</p><p>Exact times are shared in our WhatsApp group &mdash; ask a youth leader to add you.</p></div></div>
+                            <div class="card"><div class="card-content"><h3>When We Meet</h3><p><strong>Youth Meeting &amp; Choir:</strong> Sundays at St. Maurus Church</p><p>Exact times are shared in our WhatsApp group &mdash; join using the button below.</p><a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-whatsapp"></i> Join the Group</a></div></div>
                             <div class="card"><div class="card-content"><h3>What to Bring</h3><p>Just bring yourself! If you have a Bible, feel free to bring it. Wear comfortable clothes as we often have active games and activities.</p></div></div>
                             <div class="card"><div class="card-content"><h3>Frequently Asked Questions</h3><p><strong>Do I need to be Catholic to attend?</strong> No, all are welcome.</p><p><strong>Is there a cost?</strong> Most gatherings are free; trips and retreats may have a small contribution.</p><p><strong>Do my parents need to stay?</strong> No &mdash; but they're always welcome to speak with our leaders.</p></div></div>
                         </div>
@@ -2898,9 +2941,10 @@
                                     <li><strong>Come to a Sunday meeting:</strong> Join us at St. Maurus Church.</li>
                                     <li><strong>Meet our team:</strong> Introduce yourself to our youth leaders.</li>
                                     <li><strong>Join a ministry:</strong> Choir, outreach, prayer, Bible study and more.</li>
-                                    <li><strong>Get on the group:</strong> Ask a leader to add you to our WhatsApp group.</li>
+                                    <li><strong>Join the group:</strong> Tap the WhatsApp button to get connected instantly.</li>
                                 </ol>
-                                <a href="#get-involved" class="btn nav-link mt-20">Get Involved Today</a>
+                                <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn mt-20"><i class="fab fa-whatsapp"></i> Join the WhatsApp Group</a>
+                                <a href="#get-involved" class="btn btn-primary mt-20 nav-link">Get Involved Today</a>
                             </div>
                             <div><img src="images/download (33).jpeg" alt="Youth group activity" class="img-fluid" loading="lazy"></div>
                         </div>
@@ -2968,7 +3012,8 @@
                 <div class="container">
                     <div class="content-section">
                         <h2>Faith Formation Resources</h2>
-                        <p>Our formation materials are shared directly with members through our WhatsApp groups. Reach out to a youth leader and we'll send you what you need.</p>
+                        <p>Our formation materials are shared directly with members through our WhatsApp group. Join the group and we'll send you what you need.</p>
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn mt-20"><i class="fab fa-whatsapp"></i> Join the WhatsApp Group</a>
                         <div class="resource-category">
                             <h3>Prayer Resources</h3>
                             <div class="resource-list">
@@ -2993,7 +3038,7 @@
                                 <div class="resource-item"><div class="resource-icon"><i class="fas fa-question-circle"></i></div><h4>Apologetics</h4><p>Answers to common questions about the Catholic faith.</p><a href="#contact" class="btn btn-sm nav-link">Request</a></div>
                             </div>
                         </div>
-                        <p class="form-note"><i class="fas fa-info-circle"></i> Materials are shared through our WhatsApp groups &mdash; no downloads are hosted on this website.</p>
+                        <p class="form-note"><i class="fas fa-info-circle"></i> Materials are shared through our WhatsApp group &mdash; no downloads are hosted on this website.</p>
                     </div>
                 </div>
             </div>
@@ -3020,13 +3065,14 @@
                         <div class="faq-item"><div class="faq-question"><span>When and where do you meet?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>We meet every Sunday at St. Maurus Church, on Mathare North Road, Nairobi. Our youth choir also meets as part of that Sunday gathering. Exact times are shared in our WhatsApp group.</p></div></div>
                         <div class="faq-item"><div class="faq-question"><span>Is there a cost to participate?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Most of our regular programming is free. Some special events like the Yearly Youth Retreat or the Nakuru Team Building Trip may have a contribution, but we never want finances to be a barrier. Speak to our Welfare Secretary if you need support.</p></div></div>
                         <div class="faq-item"><div class="faq-question"><span>Do I need to bring anything?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Just bring yourself! If you have a Bible, you're welcome to bring it, but it's not required. Wear comfortable clothes as we often have active games.</p></div></div>
-                        <div class="faq-item"><div class="faq-question"><span>How do I join the WhatsApp group?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>All communication is handled through WhatsApp group invites provided by our youth leaders. Speak to any leader at a Sunday meeting, or call 0112 818587 and we'll add you in.</p></div></div>
+                        <div class="faq-item"><div class="faq-question"><span>How do I join the WhatsApp group?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>Easy! Just tap the <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener">WhatsApp group link</a>, or use the green WhatsApp button at the top of this page. You can also call 0112 818587 and we'll add you in.</p></div></div>
                         <div class="faq-item"><div class="faq-question"><span>What if I'm not Catholic?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer"><p>You are absolutely welcome! Our youth ministry is open to everyone regardless of religious background. We'll share our Catholic faith with you, but there's no pressure at all. Come as you are!</p></div></div>
                     </div>
                     <div class="content-section">
                         <h2>Still Have Questions?</h2>
                         <p>Can't find the answer you're looking for? We'd love to help!</p>
-                        <a href="#contact" class="btn nav-link">Contact Us</a>
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Ask in the WhatsApp Group</a>
+                        <a href="#contact" class="btn btn-primary nav-link">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -3101,6 +3147,7 @@
                     <p>The St. Maurus Church Youth Ministry &mdash; <strong>Youth Serving Christ</strong> &mdash; is dedicated to helping young people grow in their Catholic faith through prayer, service, and community.</p>
                     <p style="margin-top: 10px; color: var(--secondary-light); font-weight: 600;">Connected in Faith, Driven by Love, United in Christ.</p>
                     <div class="social-links">
+                        <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener" aria-label="Join our WhatsApp group" title="Join our WhatsApp Group"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.instagram.com/st_maurus_ysc" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@st.maurus.youth.s" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
@@ -3128,7 +3175,7 @@
                         <li><i class="fas fa-map-marker-alt"></i> Mathare North Road, Nairobi, Kenya</li>
                         <li><i class="fas fa-phone"></i> 0112 818587</li>
                         <li><i class="fas fa-phone"></i> 0700 488222</li>
-                        <li><i class="fab fa-whatsapp"></i> Communication via WhatsApp groups</li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://chat.whatsapp.com/FmEbjVUfgnLFB9p7CDg8rt" target="_blank" rel="noopener">Join our WhatsApp group</a></li>
                         <li><i class="far fa-clock"></i> Meetings: Sundays at St. Maurus Church</li>
                     </ul>
                 </div>
