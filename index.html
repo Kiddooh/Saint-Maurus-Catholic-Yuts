@@ -3735,5 +3735,67 @@
             boot();
         }
     </script>
+    
+    <script type="module">
+  // 1. Import Supabase
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+  // 2. REPLACE THESE WITH YOUR ACTUAL KEYS FROM STEP 1
+  const SUPABASE_URL = 'https://bpjxhwlystvirfkyhi.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJwbGp4aHdsaHlzdHZpcmZreWhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA2ODk3MDgsImV4cCI6MjEwNjI2NTcwOH0.kSx6GTzeKLN0Y1ESSR5TOXy9CBl_s8EQ8syO6TBCFn8';
+
+  const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // 3. Form configurations (maps your HTML IDs to your Database Columns)
+  const FORMS = [
+    { table: 'event_registrations', detect: '#reg-name', map: { 'event-name': 'event_name', 'reg-name': 'full_name', 'reg-phone': 'phone', 'reg-attendees': 'attendees', 'reg-grade': 'grade', 'reg-notes': 'notes' }, success: '.form-success', closeModal: true },
+    { table: 'ministry_interest', detect: '#mi-name', map: { 'mi-name': 'full_name', 'mi-phone': 'phone', 'mi-ministry': 'ministry', 'mi-grade': 'grade', 'mi-message': 'message' }, success: '.form-success' },
+    { table: 'volunteers', detect: '#vo-name', map: { 'vo-name': 'full_name', 'vo-phone': 'phone', 'vo-availability': 'availability', 'vo-area': 'area', 'vo-message': 'message' }, success: '.form-success' },
+    { table: 'visitors', detect: '#nh-name', map: { 'nh-name': 'full_name', 'nh-age': 'age_grade', 'nh-phone': 'phone', 'nh-hear': 'heard_about', 'nh-notes': 'notes' }, success: '.form-success' },
+    { table: 'newsletter_subscribers', detect: 'input[name="newsletter-email"]', map: { 'newsletter-email': 'email' }, success: '.js-newsletter-msg' }
+  ];
+
+  // 4. Handle form submissions automatically
+  FORMS.forEach(cfg => {
+    document.querySelectorAll('form').forEach(form => {
+      if (!form.querySelector(cfg.detect)) return;
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        
+        const btn = form.querySelector('[type="submit"]');
+        const original = btn ? btn.innerHTML : '';
+        if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…'; }
+
+        const payload = {};
+        for (const [id, col] of Object.entries(cfg.map)) {
+          const el = form.querySelector('#' + CSS.escape(id)) || form.querySelector(`[name="${id}"]`);
+          if (!el) continue;
+          let v = (el.value || '').trim();
+          if (col === 'attendees') v = parseInt(v, 10) || 1;
+          payload[col] = v === '' ? null : v;
+        }
+
+        const { error } = await db.from(cfg.table).insert(payload);
+
+        if (btn) { btn.disabled = false; btn.innerHTML = original; }
+
+        if (error) {
+          console.error(error);
+          alert('Sorry, we could not send that. Please try again or WhatsApp us.');
+          return;
+        }
+
+        const msg = form.querySelector(cfg.success) || form.parentElement.querySelector(cfg.success);
+        if (msg) { msg.classList.add('show'); setTimeout(() => msg.classList.remove('show'), 6000); }
+        form.reset();
+        
+        if (cfg.closeModal && typeof closeEventModal === 'function') { 
+            setTimeout(closeEventModal, 1600); 
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
