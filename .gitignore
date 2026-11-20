@@ -1,0 +1,3 @@
+# Project documents contain confidential commercial and technical information.
+# Deploy separately to a private directory; never put these in a public repository.
+/docs/
